@@ -1,8 +1,10 @@
 # [IA] Claude – esqueleto do app.py (sidebar, widgets mínimos e colunas), sem a Skill do Streamlit
-# [IA] Claude – Aula 22: sintaxe de cache, heatmap (seaborn)
+# [IA] Claude – Aula 22: sintaxe de cache, heatmap (seaborn), histogramas e tabs; tratamento de 0/1 variável
+# [IA] Claude – Aula 22: sintaxe do Dashboard 2 (st.metric, groupby e gráfico Altair); métricas e recorte escolhidos por mim
 from pathlib import Path
 
 import matplotlib.pyplot as plt
+import altair as alt
 import pandas as pd
 import seaborn as sns
 import streamlit as st
@@ -20,6 +22,8 @@ VARS_QUANT = [
 COR_DESTAQUE = "#2d223a"
 COR_CONTEXTO = "#e9d4d0"
 
+
+# [IA] Claude – Aula 22: carregamento com @st.cache_data
 @st.cache_data
 def carregar_dados():
     return pd.read_csv(CAMINHO_DADOS)
@@ -27,11 +31,20 @@ def carregar_dados():
 
 df = carregar_dados()
 
+# Faixas operacionais de frequência (cortes definidos por mim para facilitar a leitura da coordenação)
+df["faixa_freq"] = pd.cut(
+    df["attendance_percent"],
+    bins=[0, 75, 90, 100],
+    labels=["Baixa", "Média", "Alta"],
+    include_lowest=True,
+)
+
 st.title("Desempenho Estudantil")
 tab1, tab2 = st.tabs(["Dashboard 1: Correlação e Distribuição", "Dashboard 2: KPIs"])
 
+# ---------------- Dashboard 1 ----------------
 with tab1:
-
+    # --- Sidebar: filtros ---
     with st.sidebar:
         st.header("Filtros")
         variaveis = st.multiselect(
@@ -48,11 +61,13 @@ with tab1:
             value=(nota_min, nota_max),
         )
 
+    # Aplica o filtro de intervalo e recalcula tudo a partir dele
     df_f = df[df["final_exam_score"].between(intervalo[0], intervalo[1])]
     st.caption(f"{len(df_f)} de {len(df)} alunos no intervalo selecionado.")
 
     col_corr, col_dist = st.columns([1, 1.5])
 
+    # --- Correlação ---
     with col_corr:
         st.subheader("Correlação (Spearman)")
         if len(variaveis) < 2:
@@ -69,6 +84,7 @@ with tab1:
             st.pyplot(fig)
             plt.close(fig)
 
+    # --- Distribuição ---
     with col_dist:
         st.subheader("Distribuição")
         if len(variaveis) == 0:
@@ -91,7 +107,40 @@ with tab1:
             st.pyplot(fig)
             plt.close(fig)
 
+# ---------------- Dashboard 2 ----------------
 with tab2:
-    st.subheader("KPIs")
-    st.info("Em construção: as métricas serão definidas por você e justificadas em "
-            "entregas/justificativa-metricas.md.")
+    st.subheader("KPIs de desempenho")
+    st.caption("Calculados sobre todos os alunos (não dependem dos filtros do Dashboard 1).")
+
+    media_nota = df["final_exam_score"].mean()
+    media_estudo = df["study_time_hours"].mean()
+    variacao = (df["final_exam_score"] - df["previous_grade"]).mean()
+
+    k1, k2, k3 = st.columns(3)
+    k1.metric("Média da nota final", f"{media_nota:.1f}")
+    k2.metric("Média de horas de estudo (por dia)", f"{media_estudo:.2f} h")
+    k3.metric("Variação média (nota final − nota anterior)", f"{variacao:+.1f} pontos")
+
+    st.subheader("Desempenho Alto por faixa de frequência")
+    tabela = (
+        df.assign(alto=df["situacao"] == "Desempenho Alto")
+        .groupby("faixa_freq", observed=True)["alto"]
+        .agg(proporcao="mean", n="size")
+        .reset_index()
+    )
+    tabela["rotulo"] = tabela.apply(
+        lambda r: f"{r['proporcao']:.1%} (n={int(r['n'])})", axis=1
+    )
+
+    barras = alt.Chart(tabela).mark_bar(color=COR_DESTAQUE).encode(
+        x=alt.X("faixa_freq:N", title="Faixa de frequência", sort=["Baixa", "Média", "Alta"]),
+        y=alt.Y("proporcao:Q", title="Proporção de Desempenho Alto",
+                scale=alt.Scale(domain=[0, 1]), axis=alt.Axis(format="%")),
+        tooltip=["faixa_freq", alt.Tooltip("proporcao:Q", format=".1%"), "n"],
+    )
+    textos = barras.mark_text(dy=-8, color=COR_DESTAQUE).encode(text="rotulo:N")
+    st.altair_chart(barras + textos, width="stretch")
+    st.caption(
+        "Faixas operacionais: Baixa até 75%, Média de 75% a 90%, Alta acima de 90%. "
+        "O gráfico mostra uma associação descritiva, não uma relação de causa."
+    )
