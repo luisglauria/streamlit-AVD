@@ -1,298 +1,1001 @@
-age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal,doenca_cardiaca,chol_log,sexo_label,faixa_etaria
-63,1,1,145,233,1,2,150,0,2.3,3,0.0,6.0,Normal,5.455321115357702,Masculino,55-64
-67,1,4,160,286,0,2,108,1,1.5,2,3.0,3.0,Cardíaco,5.659482215759621,Masculino,65+
-67,1,4,120,229,0,2,129,1,2.6,2,2.0,7.0,Cardíaco,5.438079308923196,Masculino,65+
-37,1,3,130,250,0,0,187,0,3.5,3,0.0,3.0,Normal,5.5254529391317835,Masculino,<45
-41,0,2,130,204,0,2,172,0,1.4,1,0.0,3.0,Normal,5.3230099791384085,Feminino,<45
-56,1,2,120,236,0,0,178,0,0.8,1,0.0,3.0,Normal,5.4680601411351315,Masculino,55-64
-62,0,4,140,268,0,2,160,0,3.6,3,2.0,3.0,Cardíaco,5.594711379601839,Feminino,55-64
-57,0,4,120,354,0,0,163,1,0.6,1,0.0,3.0,Normal,5.872117789475416,Feminino,55-64
-63,1,4,130,254,0,2,147,0,1.4,2,1.0,7.0,Cardíaco,5.541263545158426,Masculino,55-64
-53,1,4,140,203,1,2,155,1,3.1,3,0.0,7.0,Cardíaco,5.318119993844216,Masculino,45-54
-57,1,4,140,192,0,0,148,0,0.4,2,0.0,6.0,Normal,5.262690188904886,Masculino,55-64
-56,0,2,140,294,0,2,153,0,1.3,2,0.0,3.0,Normal,5.68697535633982,Feminino,55-64
-56,1,3,130,256,1,2,142,1,0.6,2,1.0,6.0,Cardíaco,5.54907608489522,Masculino,55-64
-44,1,2,120,263,0,0,173,0,0.0,1,0.0,7.0,Normal,5.575949103146316,Masculino,<45
-52,1,3,172,199,1,0,162,0,0.5,1,0.0,7.0,Normal,5.298317366548036,Masculino,45-54
-57,1,3,150,168,0,0,174,0,1.6,1,0.0,3.0,Normal,5.1298987149230735,Masculino,55-64
-48,1,2,110,229,0,0,168,0,1.0,3,0.0,7.0,Cardíaco,5.438079308923196,Masculino,45-54
-54,1,4,140,239,0,0,160,0,1.2,1,0.0,3.0,Normal,5.480638923341991,Masculino,45-54
-48,0,3,130,275,0,0,139,0,0.2,1,0.0,3.0,Normal,5.62040086571715,Feminino,45-54
-49,1,2,130,266,0,0,171,0,0.6,1,0.0,3.0,Normal,5.58724865840025,Masculino,45-54
-64,1,1,110,211,0,2,144,1,1.8,2,0.0,3.0,Normal,5.356586274672012,Masculino,55-64
-58,0,1,150,283,1,2,162,0,1.0,1,0.0,3.0,Normal,5.648974238161206,Feminino,55-64
-58,1,2,120,284,0,2,160,0,1.8,2,0.0,3.0,Cardíaco,5.652489180268651,Masculino,55-64
-58,1,3,132,224,0,2,173,0,3.2,1,2.0,7.0,Cardíaco,5.41610040220442,Masculino,55-64
-60,1,4,130,206,0,2,132,1,2.4,2,2.0,7.0,Cardíaco,5.332718793265369,Masculino,55-64
-50,0,3,120,219,0,0,158,0,1.6,2,0.0,3.0,Normal,5.393627546352362,Feminino,45-54
-58,0,3,120,340,0,0,172,0,0.0,1,0.0,3.0,Normal,5.831882477283517,Feminino,55-64
-66,0,1,150,226,0,0,114,0,2.6,3,0.0,3.0,Normal,5.424950017481403,Feminino,65+
-43,1,4,150,247,0,0,171,0,1.5,1,0.0,3.0,Normal,5.5134287461649825,Masculino,<45
-40,1,4,110,167,0,2,114,1,2.0,2,0.0,7.0,Cardíaco,5.123963979403259,Masculino,<45
-69,0,1,140,239,0,0,151,0,1.8,1,2.0,3.0,Normal,5.480638923341991,Feminino,65+
-60,1,4,117,230,1,0,160,1,1.4,1,2.0,7.0,Cardíaco,5.442417710521793,Masculino,55-64
-64,1,3,140,335,0,0,158,0,0.0,1,0.0,3.0,Cardíaco,5.817111159963204,Masculino,55-64
-59,1,4,135,234,0,0,161,0,0.5,2,0.0,7.0,Normal,5.459585514144159,Masculino,55-64
-44,1,3,130,233,0,0,179,1,0.4,1,0.0,3.0,Normal,5.455321115357702,Masculino,<45
-42,1,4,140,226,0,0,178,0,0.0,1,0.0,3.0,Normal,5.424950017481403,Masculino,<45
-43,1,4,120,177,0,2,120,1,2.5,2,0.0,7.0,Cardíaco,5.181783550292085,Masculino,<45
-57,1,4,150,276,0,2,112,1,0.6,2,1.0,6.0,Cardíaco,5.6240175061873385,Masculino,55-64
-55,1,4,132,353,0,0,132,1,1.2,2,1.0,7.0,Cardíaco,5.869296913133774,Masculino,45-54
-61,1,3,150,243,1,0,137,1,1.0,2,0.0,3.0,Normal,5.497168225293202,Masculino,55-64
-65,0,4,150,225,0,2,114,0,1.0,2,3.0,7.0,Cardíaco,5.420534999272286,Feminino,55-64
-40,1,1,140,199,0,0,178,1,1.4,1,0.0,7.0,Normal,5.298317366548036,Masculino,<45
-71,0,2,160,302,0,0,162,0,0.4,1,2.0,3.0,Normal,5.713732805509369,Feminino,65+
-59,1,3,150,212,1,0,157,0,1.6,1,0.0,3.0,Normal,5.3612921657094255,Masculino,55-64
-61,0,4,130,330,0,2,169,0,0.0,1,0.0,3.0,Cardíaco,5.802118375377063,Feminino,55-64
-58,1,3,112,230,0,2,165,0,2.5,2,1.0,7.0,Cardíaco,5.442417710521793,Masculino,55-64
-51,1,3,110,175,0,0,123,0,0.6,1,0.0,3.0,Normal,5.170483995038151,Masculino,45-54
-50,1,4,150,243,0,2,128,0,2.6,2,0.0,7.0,Cardíaco,5.497168225293202,Masculino,45-54
-65,0,3,140,417,1,2,157,0,0.8,1,1.0,3.0,Normal,6.035481432524756,Feminino,55-64
-53,1,3,130,197,1,2,152,0,1.2,3,0.0,3.0,Normal,5.288267030694535,Masculino,45-54
-41,0,2,105,198,0,0,168,0,0.0,1,1.0,3.0,Normal,5.293304824724492,Feminino,<45
-65,1,4,120,177,0,0,140,0,0.4,1,0.0,7.0,Normal,5.181783550292085,Masculino,55-64
-44,1,4,112,290,0,2,153,0,0.0,1,1.0,3.0,Cardíaco,5.673323267171493,Masculino,<45
-44,1,2,130,219,0,2,188,0,0.0,1,0.0,3.0,Normal,5.393627546352362,Masculino,<45
-60,1,4,130,253,0,0,144,1,1.4,1,1.0,7.0,Cardíaco,5.537334267018537,Masculino,55-64
-54,1,4,124,266,0,2,109,1,2.2,2,1.0,7.0,Cardíaco,5.58724865840025,Masculino,45-54
-50,1,3,140,233,0,0,163,0,0.6,2,1.0,7.0,Cardíaco,5.455321115357702,Masculino,45-54
-41,1,4,110,172,0,2,158,0,0.0,1,0.0,7.0,Cardíaco,5.153291594497779,Masculino,<45
-54,1,3,125,273,0,2,152,0,0.5,3,1.0,3.0,Normal,5.6131281063880705,Masculino,45-54
-51,1,1,125,213,0,2,125,1,1.4,1,1.0,3.0,Normal,5.365976015021851,Masculino,45-54
-51,0,4,130,305,0,0,142,1,1.2,2,0.0,7.0,Cardíaco,5.723585101952381,Feminino,45-54
-46,0,3,142,177,0,2,160,1,1.4,3,0.0,3.0,Normal,5.181783550292085,Feminino,45-54
-58,1,4,128,216,0,2,131,1,2.2,2,3.0,7.0,Cardíaco,5.37989735354046,Masculino,55-64
-54,0,3,135,304,1,0,170,0,0.0,1,0.0,3.0,Normal,5.720311776607412,Feminino,45-54
-54,1,4,120,188,0,0,113,0,1.4,2,1.0,7.0,Cardíaco,5.241747015059643,Masculino,45-54
-60,1,4,145,282,0,2,142,1,2.8,2,2.0,7.0,Cardíaco,5.645446897643238,Masculino,55-64
-60,1,3,140,185,0,2,155,0,3.0,2,0.0,3.0,Cardíaco,5.225746673713202,Masculino,55-64
-54,1,3,150,232,0,2,165,0,1.6,1,0.0,7.0,Normal,5.4510384535657,Masculino,45-54
-59,1,4,170,326,0,2,140,1,3.4,3,0.0,7.0,Cardíaco,5.7899601708972535,Masculino,55-64
-46,1,3,150,231,0,0,147,0,3.6,2,0.0,3.0,Cardíaco,5.44673737166631,Masculino,45-54
-65,0,3,155,269,0,0,148,0,0.8,1,0.0,3.0,Normal,5.598421958998375,Feminino,55-64
-67,1,4,125,254,1,0,163,0,0.2,2,2.0,7.0,Cardíaco,5.541263545158426,Masculino,65+
-62,1,4,120,267,0,0,99,1,1.8,2,2.0,7.0,Cardíaco,5.5909869805108565,Masculino,55-64
-65,1,4,110,248,0,2,158,0,0.6,1,2.0,6.0,Cardíaco,5.517452896464707,Masculino,55-64
-44,1,4,110,197,0,2,177,0,0.0,1,1.0,3.0,Cardíaco,5.288267030694535,Masculino,<45
-65,0,3,160,360,0,2,151,0,0.8,1,0.0,3.0,Normal,5.8888779583328805,Feminino,55-64
-60,1,4,125,258,0,2,141,1,2.8,2,1.0,7.0,Cardíaco,5.556828061699537,Masculino,55-64
-51,0,3,140,308,0,2,142,0,1.5,1,1.0,3.0,Normal,5.733341276897746,Feminino,45-54
-48,1,2,130,245,0,2,180,0,0.2,2,0.0,3.0,Normal,5.5053315359323625,Masculino,45-54
-58,1,4,150,270,0,2,111,1,0.8,1,0.0,7.0,Cardíaco,5.602118820879701,Masculino,55-64
-45,1,4,104,208,0,2,148,1,3.0,2,0.0,3.0,Normal,5.342334251964811,Masculino,<45
-53,0,4,130,264,0,2,143,0,0.4,2,0.0,3.0,Normal,5.579729825986222,Feminino,45-54
-39,1,3,140,321,0,2,182,0,0.0,1,0.0,3.0,Normal,5.7745515455444085,Masculino,<45
-68,1,3,180,274,1,2,150,1,1.6,2,0.0,7.0,Cardíaco,5.616771097666572,Masculino,65+
-52,1,2,120,325,0,0,172,0,0.2,1,0.0,3.0,Normal,5.786897381366708,Masculino,45-54
-44,1,3,140,235,0,2,180,0,0.0,1,0.0,3.0,Normal,5.4638318050256105,Masculino,<45
-47,1,3,138,257,0,2,156,0,0.0,1,0.0,3.0,Normal,5.552959584921617,Masculino,45-54
-53,0,4,138,234,0,2,160,0,0.0,1,0.0,3.0,Normal,5.459585514144159,Feminino,45-54
-51,0,3,130,256,0,2,149,0,0.5,1,0.0,3.0,Normal,5.54907608489522,Feminino,45-54
-66,1,4,120,302,0,2,151,0,0.4,2,0.0,3.0,Normal,5.713732805509369,Masculino,65+
-62,0,4,160,164,0,2,145,0,6.2,3,3.0,7.0,Cardíaco,5.10594547390058,Feminino,55-64
-62,1,3,130,231,0,0,146,0,1.8,2,3.0,7.0,Normal,5.44673737166631,Masculino,55-64
-44,0,3,108,141,0,0,175,0,0.6,2,0.0,3.0,Normal,4.955827057601261,Feminino,<45
-63,0,3,135,252,0,2,172,0,0.0,1,0.0,3.0,Normal,5.53338948872752,Feminino,55-64
-52,1,4,128,255,0,0,161,1,0.0,1,1.0,7.0,Cardíaco,5.545177444479562,Masculino,45-54
-59,1,4,110,239,0,2,142,1,1.2,2,1.0,7.0,Cardíaco,5.480638923341991,Masculino,55-64
-60,0,4,150,258,0,2,157,0,2.6,2,2.0,7.0,Cardíaco,5.556828061699537,Feminino,55-64
-52,1,2,134,201,0,0,158,0,0.8,1,1.0,3.0,Normal,5.308267697401205,Masculino,45-54
-48,1,4,122,222,0,2,186,0,0.0,1,0.0,3.0,Normal,5.407171771460119,Masculino,45-54
-45,1,4,115,260,0,2,185,0,0.0,1,0.0,3.0,Normal,5.564520407322694,Masculino,<45
-34,1,1,118,182,0,2,174,0,0.0,1,0.0,3.0,Normal,5.209486152841421,Masculino,<45
-57,0,4,128,303,0,2,159,0,0.0,1,1.0,3.0,Normal,5.717027701406222,Feminino,55-64
-71,0,3,110,265,1,2,130,0,0.0,1,1.0,3.0,Normal,5.583496308781699,Feminino,65+
-49,1,3,120,188,0,0,139,0,2.0,2,3.0,7.0,Cardíaco,5.241747015059643,Masculino,45-54
-54,1,2,108,309,0,0,156,0,0.0,1,0.0,7.0,Normal,5.736572297479192,Masculino,45-54
-59,1,4,140,177,0,0,162,1,0.0,1,1.0,7.0,Cardíaco,5.181783550292085,Masculino,55-64
-57,1,3,128,229,0,2,150,0,0.4,2,1.0,7.0,Cardíaco,5.438079308923196,Masculino,55-64
-61,1,4,120,260,0,0,140,1,3.6,2,1.0,7.0,Cardíaco,5.564520407322694,Masculino,55-64
-39,1,4,118,219,0,0,140,0,1.2,2,0.0,7.0,Cardíaco,5.393627546352362,Masculino,<45
-61,0,4,145,307,0,2,146,1,1.0,2,0.0,7.0,Cardíaco,5.730099782973574,Feminino,55-64
-56,1,4,125,249,1,2,144,1,1.2,2,1.0,3.0,Cardíaco,5.521460917862246,Masculino,55-64
-52,1,1,118,186,0,2,190,0,0.0,2,0.0,6.0,Normal,5.231108616854587,Masculino,45-54
-43,0,4,132,341,1,2,136,1,3.0,2,0.0,7.0,Cardíaco,5.834810737062605,Feminino,<45
-62,0,3,130,263,0,0,97,0,1.2,2,1.0,7.0,Cardíaco,5.575949103146316,Feminino,55-64
-41,1,2,135,203,0,0,132,0,0.0,2,0.0,6.0,Normal,5.318119993844216,Masculino,<45
-58,1,3,140,211,1,2,165,0,0.0,1,0.0,3.0,Normal,5.356586274672012,Masculino,55-64
-35,0,4,138,183,0,0,182,0,1.4,1,0.0,3.0,Normal,5.214935757608986,Feminino,<45
-63,1,4,130,330,1,2,132,1,1.8,1,3.0,7.0,Cardíaco,5.802118375377063,Masculino,55-64
-65,1,4,135,254,0,2,127,0,2.8,2,1.0,7.0,Cardíaco,5.541263545158426,Masculino,55-64
-48,1,4,130,256,1,2,150,1,0.0,1,2.0,7.0,Cardíaco,5.54907608489522,Masculino,45-54
-63,0,4,150,407,0,2,154,0,4.0,2,3.0,7.0,Cardíaco,6.0112671744041615,Feminino,55-64
-51,1,3,100,222,0,0,143,1,1.2,2,0.0,3.0,Normal,5.407171771460119,Masculino,45-54
-55,1,4,140,217,0,0,111,1,5.6,3,0.0,7.0,Cardíaco,5.384495062789089,Masculino,45-54
-65,1,1,138,282,1,2,174,0,1.4,2,1.0,3.0,Cardíaco,5.645446897643238,Masculino,55-64
-45,0,2,130,234,0,2,175,0,0.6,2,0.0,3.0,Normal,5.459585514144159,Feminino,<45
-56,0,4,200,288,1,2,133,1,4.0,3,2.0,7.0,Cardíaco,5.666426688112432,Feminino,55-64
-54,1,4,110,239,0,0,126,1,2.8,2,1.0,7.0,Cardíaco,5.480638923341991,Masculino,45-54
-44,1,2,120,220,0,0,170,0,0.0,1,0.0,3.0,Normal,5.3981627015177525,Masculino,<45
-62,0,4,124,209,0,0,163,0,0.0,1,0.0,3.0,Normal,5.3471075307174685,Feminino,55-64
-54,1,3,120,258,0,2,147,0,0.4,2,0.0,7.0,Normal,5.556828061699537,Masculino,45-54
-51,1,3,94,227,0,0,154,1,0.0,1,1.0,7.0,Normal,5.429345628954441,Masculino,45-54
-29,1,2,130,204,0,2,202,0,0.0,1,0.0,3.0,Normal,5.3230099791384085,Masculino,<45
-51,1,4,140,261,0,2,186,1,0.0,1,0.0,3.0,Normal,5.568344503761097,Masculino,45-54
-43,0,3,122,213,0,0,165,0,0.2,2,0.0,3.0,Normal,5.365976015021851,Feminino,<45
-55,0,2,135,250,0,2,161,0,1.4,2,0.0,3.0,Normal,5.5254529391317835,Feminino,45-54
-70,1,4,145,174,0,0,125,1,2.6,3,0.0,7.0,Cardíaco,5.1647859739235145,Masculino,65+
-62,1,2,120,281,0,2,103,0,1.4,2,1.0,7.0,Cardíaco,5.641907070938114,Masculino,55-64
-35,1,4,120,198,0,0,130,1,1.6,2,0.0,7.0,Cardíaco,5.293304824724492,Masculino,<45
-51,1,3,125,245,1,2,166,0,2.4,2,0.0,3.0,Normal,5.5053315359323625,Masculino,45-54
-59,1,2,140,221,0,0,164,1,0.0,1,0.0,3.0,Normal,5.402677381872279,Masculino,55-64
-59,1,1,170,288,0,2,159,0,0.2,2,0.0,7.0,Cardíaco,5.666426688112432,Masculino,55-64
-52,1,2,128,205,1,0,184,0,0.0,1,0.0,3.0,Normal,5.327876168789581,Masculino,45-54
-64,1,3,125,309,0,0,131,1,1.8,2,0.0,7.0,Cardíaco,5.736572297479192,Masculino,55-64
-58,1,3,105,240,0,2,154,1,0.6,2,0.0,7.0,Normal,5.484796933490655,Masculino,55-64
-47,1,3,108,243,0,0,152,0,0.0,1,0.0,3.0,Cardíaco,5.497168225293202,Masculino,45-54
-57,1,4,165,289,1,2,124,0,1.0,2,3.0,7.0,Cardíaco,5.66988092298052,Masculino,55-64
-41,1,3,112,250,0,0,179,0,0.0,1,0.0,3.0,Normal,5.5254529391317835,Masculino,<45
-45,1,2,128,308,0,2,170,0,0.0,1,0.0,3.0,Normal,5.733341276897746,Masculino,<45
-60,0,3,102,318,0,0,160,0,0.0,1,1.0,3.0,Normal,5.765191102784844,Feminino,55-64
-52,1,1,152,298,1,0,178,0,1.2,2,0.0,7.0,Normal,5.700443573390687,Masculino,45-54
-42,0,4,102,265,0,2,122,0,0.6,2,0.0,3.0,Normal,5.583496308781699,Feminino,<45
-67,0,3,115,564,0,2,160,0,1.6,2,0.0,7.0,Normal,6.336825731146441,Feminino,65+
-55,1,4,160,289,0,2,145,1,0.8,2,1.0,7.0,Cardíaco,5.66988092298052,Masculino,45-54
-64,1,4,120,246,0,2,96,1,2.2,3,1.0,3.0,Cardíaco,5.5093883366279774,Masculino,55-64
-70,1,4,130,322,0,2,109,0,2.4,2,3.0,3.0,Cardíaco,5.777652323222656,Masculino,65+
-51,1,4,140,299,0,0,173,1,1.6,1,0.0,7.0,Cardíaco,5.703782474656201,Masculino,45-54
-58,1,4,125,300,0,2,171,0,0.0,1,2.0,7.0,Cardíaco,5.707110264748875,Masculino,55-64
-60,1,4,140,293,0,2,170,0,1.2,2,2.0,7.0,Cardíaco,5.683579767338681,Masculino,55-64
-68,1,3,118,277,0,0,151,0,1.0,1,1.0,7.0,Normal,5.627621113690637,Masculino,65+
-46,1,2,101,197,1,0,156,0,0.0,1,0.0,7.0,Normal,5.288267030694535,Masculino,45-54
-77,1,4,125,304,0,2,162,1,0.0,1,3.0,3.0,Cardíaco,5.720311776607412,Masculino,65+
-54,0,3,110,214,0,0,158,0,1.6,2,0.0,3.0,Normal,5.3706380281276624,Feminino,45-54
-58,0,4,100,248,0,2,122,0,1.0,2,0.0,3.0,Normal,5.517452896464707,Feminino,55-64
-48,1,3,124,255,1,0,175,0,0.0,1,2.0,3.0,Normal,5.545177444479562,Masculino,45-54
-57,1,4,132,207,0,0,168,1,0.0,1,0.0,7.0,Normal,5.337538079701318,Masculino,55-64
-54,0,2,132,288,1,2,159,1,0.0,1,1.0,3.0,Normal,5.666426688112432,Feminino,45-54
-35,1,4,126,282,0,2,156,1,0.0,1,0.0,7.0,Cardíaco,5.645446897643238,Masculino,<45
-45,0,2,112,160,0,0,138,0,0.0,2,0.0,3.0,Normal,5.081404364984463,Feminino,<45
-70,1,3,160,269,0,0,112,1,2.9,2,1.0,7.0,Cardíaco,5.598421958998375,Masculino,65+
-53,1,4,142,226,0,2,111,1,0.0,1,0.0,7.0,Normal,5.424950017481403,Masculino,45-54
-59,0,4,174,249,0,0,143,1,0.0,2,0.0,3.0,Cardíaco,5.521460917862246,Feminino,55-64
-62,0,4,140,394,0,2,157,0,1.2,2,0.0,3.0,Normal,5.978885764901122,Feminino,55-64
-64,1,4,145,212,0,2,132,0,2.0,2,2.0,6.0,Cardíaco,5.3612921657094255,Masculino,55-64
-57,1,4,152,274,0,0,88,1,1.2,2,1.0,7.0,Cardíaco,5.616771097666572,Masculino,55-64
-52,1,4,108,233,1,0,147,0,0.1,1,3.0,7.0,Normal,5.455321115357702,Masculino,45-54
-56,1,4,132,184,0,2,105,1,2.1,2,1.0,6.0,Cardíaco,5.220355825078324,Masculino,55-64
-43,1,3,130,315,0,0,162,0,1.9,1,1.0,3.0,Normal,5.755742213586912,Masculino,<45
-53,1,3,130,246,1,2,173,0,0.0,1,3.0,3.0,Normal,5.5093883366279774,Masculino,45-54
-48,1,4,124,274,0,2,166,0,0.5,2,0.0,7.0,Cardíaco,5.616771097666572,Masculino,45-54
-56,0,4,134,409,0,2,150,1,1.9,2,2.0,7.0,Cardíaco,6.016157159698354,Feminino,55-64
-42,1,1,148,244,0,2,178,0,0.8,1,2.0,3.0,Normal,5.501258210544727,Masculino,<45
-59,1,1,178,270,0,2,145,0,4.2,3,0.0,7.0,Normal,5.602118820879701,Masculino,55-64
-60,0,4,158,305,0,2,161,0,0.0,1,0.0,3.0,Cardíaco,5.723585101952381,Feminino,55-64
-63,0,2,140,195,0,0,179,0,0.0,1,2.0,3.0,Normal,5.278114659230517,Feminino,55-64
-42,1,3,120,240,1,0,194,0,0.8,3,0.0,7.0,Normal,5.484796933490655,Masculino,<45
-66,1,2,160,246,0,0,120,1,0.0,2,3.0,6.0,Cardíaco,5.5093883366279774,Masculino,65+
-54,1,2,192,283,0,2,195,0,0.0,1,1.0,7.0,Cardíaco,5.648974238161206,Masculino,45-54
-69,1,3,140,254,0,2,146,0,2.0,2,3.0,7.0,Cardíaco,5.541263545158426,Masculino,65+
-50,1,3,129,196,0,0,163,0,0.0,1,0.0,3.0,Normal,5.2832037287379885,Masculino,45-54
-51,1,4,140,298,0,0,122,1,4.2,2,3.0,7.0,Cardíaco,5.700443573390687,Masculino,45-54
-62,0,4,138,294,1,0,106,0,1.9,2,3.0,3.0,Cardíaco,5.68697535633982,Feminino,55-64
-68,0,3,120,211,0,2,115,0,1.5,2,0.0,3.0,Normal,5.356586274672012,Feminino,65+
-67,1,4,100,299,0,2,125,1,0.9,2,2.0,3.0,Cardíaco,5.703782474656201,Masculino,65+
-69,1,1,160,234,1,2,131,0,0.1,2,1.0,3.0,Normal,5.459585514144159,Masculino,65+
-45,0,4,138,236,0,2,152,1,0.2,2,0.0,3.0,Normal,5.4680601411351315,Feminino,<45
-50,0,2,120,244,0,0,162,0,1.1,1,0.0,3.0,Normal,5.501258210544727,Feminino,45-54
-59,1,1,160,273,0,2,125,0,0.0,1,0.0,3.0,Cardíaco,5.6131281063880705,Masculino,55-64
-50,0,4,110,254,0,2,159,0,0.0,1,0.0,3.0,Normal,5.541263545158426,Feminino,45-54
-64,0,4,180,325,0,0,154,1,0.0,1,0.0,3.0,Normal,5.786897381366708,Feminino,55-64
-57,1,3,150,126,1,0,173,0,0.2,1,1.0,7.0,Normal,4.844187086458591,Masculino,55-64
-64,0,3,140,313,0,0,133,0,0.2,1,0.0,7.0,Normal,5.749392985908253,Feminino,55-64
-43,1,4,110,211,0,0,161,0,0.0,1,0.0,7.0,Normal,5.356586274672012,Masculino,<45
-45,1,4,142,309,0,2,147,1,0.0,2,3.0,7.0,Cardíaco,5.736572297479192,Masculino,<45
-58,1,4,128,259,0,2,130,1,3.0,2,2.0,7.0,Cardíaco,5.560681631015528,Masculino,55-64
-50,1,4,144,200,0,2,126,1,0.9,2,0.0,7.0,Cardíaco,5.303304908059076,Masculino,45-54
-55,1,2,130,262,0,0,155,0,0.0,1,0.0,3.0,Normal,5.572154032177765,Masculino,45-54
-62,0,4,150,244,0,0,154,1,1.4,2,0.0,3.0,Cardíaco,5.501258210544727,Feminino,55-64
-37,0,3,120,215,0,0,170,0,0.0,1,0.0,3.0,Normal,5.375278407684165,Feminino,<45
-38,1,1,120,231,0,0,182,1,3.8,2,0.0,7.0,Cardíaco,5.44673737166631,Masculino,<45
-41,1,3,130,214,0,2,168,0,2.0,2,0.0,3.0,Normal,5.3706380281276624,Masculino,<45
-66,0,4,178,228,1,0,165,1,1.0,2,2.0,7.0,Cardíaco,5.43372200355424,Feminino,65+
-52,1,4,112,230,0,0,160,0,0.0,1,1.0,3.0,Cardíaco,5.442417710521793,Masculino,45-54
-56,1,1,120,193,0,2,162,0,1.9,2,0.0,7.0,Normal,5.267858159063328,Masculino,55-64
-46,0,2,105,204,0,0,172,0,0.0,1,0.0,3.0,Normal,5.3230099791384085,Feminino,45-54
-46,0,4,138,243,0,2,152,1,0.0,2,0.0,3.0,Normal,5.497168225293202,Feminino,45-54
-64,0,4,130,303,0,0,122,0,2.0,2,2.0,3.0,Normal,5.717027701406222,Feminino,55-64
-59,1,4,138,271,0,2,182,0,0.0,1,0.0,3.0,Normal,5.605802066295998,Masculino,55-64
-41,0,3,112,268,0,2,172,1,0.0,1,0.0,3.0,Normal,5.594711379601839,Feminino,<45
-54,0,3,108,267,0,2,167,0,0.0,1,0.0,3.0,Normal,5.5909869805108565,Feminino,45-54
-39,0,3,94,199,0,0,179,0,0.0,1,0.0,3.0,Normal,5.298317366548036,Feminino,<45
-53,1,4,123,282,0,0,95,1,2.0,2,2.0,7.0,Cardíaco,5.645446897643238,Masculino,45-54
-63,0,4,108,269,0,0,169,1,1.8,2,2.0,3.0,Cardíaco,5.598421958998375,Feminino,55-64
-34,0,2,118,210,0,0,192,0,0.7,1,0.0,3.0,Normal,5.351858133476067,Feminino,<45
-47,1,4,112,204,0,0,143,0,0.1,1,0.0,3.0,Normal,5.3230099791384085,Masculino,45-54
-67,0,3,152,277,0,0,172,0,0.0,1,1.0,3.0,Normal,5.627621113690637,Feminino,65+
-54,1,4,110,206,0,2,108,1,0.0,2,1.0,3.0,Cardíaco,5.332718793265369,Masculino,45-54
-66,1,4,112,212,0,2,132,1,0.1,1,1.0,3.0,Cardíaco,5.3612921657094255,Masculino,65+
-52,0,3,136,196,0,2,169,0,0.1,2,0.0,3.0,Normal,5.2832037287379885,Feminino,45-54
-55,0,4,180,327,0,1,117,1,3.4,2,0.0,3.0,Cardíaco,5.793013608384144,Feminino,45-54
-49,1,3,118,149,0,2,126,0,0.8,1,3.0,3.0,Cardíaco,5.0106352940962555,Masculino,45-54
-74,0,2,120,269,0,2,121,1,0.2,1,1.0,3.0,Normal,5.598421958998375,Feminino,65+
-54,0,3,160,201,0,0,163,0,0.0,1,1.0,3.0,Normal,5.308267697401205,Feminino,45-54
-54,1,4,122,286,0,2,116,1,3.2,2,2.0,3.0,Cardíaco,5.659482215759621,Masculino,45-54
-56,1,4,130,283,1,2,103,1,1.6,3,0.0,7.0,Cardíaco,5.648974238161206,Masculino,55-64
-46,1,4,120,249,0,2,144,0,0.8,1,0.0,7.0,Cardíaco,5.521460917862246,Masculino,45-54
-49,0,2,134,271,0,0,162,0,0.0,2,0.0,3.0,Normal,5.605802066295998,Feminino,45-54
-42,1,2,120,295,0,0,162,0,0.0,1,0.0,3.0,Normal,5.69035945432406,Masculino,<45
-41,1,2,110,235,0,0,153,0,0.0,1,0.0,3.0,Normal,5.4638318050256105,Masculino,<45
-41,0,2,126,306,0,0,163,0,0.0,1,0.0,3.0,Normal,5.726847747587197,Feminino,<45
-49,0,4,130,269,0,0,163,0,0.0,1,0.0,3.0,Normal,5.598421958998375,Feminino,45-54
-61,1,1,134,234,0,0,145,0,2.6,2,2.0,3.0,Cardíaco,5.459585514144159,Masculino,55-64
-60,0,3,120,178,1,0,96,0,0.0,1,0.0,3.0,Normal,5.187385805840755,Feminino,55-64
-67,1,4,120,237,0,0,71,0,1.0,2,0.0,3.0,Cardíaco,5.472270673671475,Masculino,65+
-58,1,4,100,234,0,0,156,0,0.1,1,1.0,7.0,Cardíaco,5.459585514144159,Masculino,55-64
-47,1,4,110,275,0,2,118,1,1.0,2,1.0,3.0,Cardíaco,5.62040086571715,Masculino,45-54
-52,1,4,125,212,0,0,168,0,1.0,1,2.0,7.0,Cardíaco,5.3612921657094255,Masculino,45-54
-62,1,2,128,208,1,2,140,0,0.0,1,0.0,3.0,Normal,5.342334251964811,Masculino,55-64
-57,1,4,110,201,0,0,126,1,1.5,2,0.0,6.0,Normal,5.308267697401205,Masculino,55-64
-58,1,4,146,218,0,0,105,0,2.0,2,1.0,7.0,Cardíaco,5.389071729816501,Masculino,55-64
-64,1,4,128,263,0,0,105,1,0.2,2,1.0,7.0,Normal,5.575949103146316,Masculino,55-64
-51,0,3,120,295,0,2,157,0,0.6,1,0.0,3.0,Normal,5.69035945432406,Feminino,45-54
-43,1,4,115,303,0,0,181,0,1.2,2,0.0,3.0,Normal,5.717027701406222,Masculino,<45
-42,0,3,120,209,0,0,173,0,0.0,2,0.0,3.0,Normal,5.3471075307174685,Feminino,<45
-67,0,4,106,223,0,0,142,0,0.3,1,2.0,3.0,Normal,5.4116460518550396,Feminino,65+
-76,0,3,140,197,0,1,116,0,1.1,2,0.0,3.0,Normal,5.288267030694535,Feminino,65+
-70,1,2,156,245,0,2,143,0,0.0,1,0.0,3.0,Normal,5.5053315359323625,Masculino,65+
-57,1,2,124,261,0,0,141,0,0.3,1,0.0,7.0,Cardíaco,5.568344503761097,Masculino,55-64
-44,0,3,118,242,0,0,149,0,0.3,2,1.0,3.0,Normal,5.493061443340548,Feminino,<45
-58,0,2,136,319,1,2,152,0,0.0,1,2.0,3.0,Cardíaco,5.768320995793772,Feminino,55-64
-60,0,1,150,240,0,0,171,0,0.9,1,0.0,3.0,Normal,5.484796933490655,Feminino,55-64
-44,1,3,120,226,0,0,169,0,0.0,1,0.0,3.0,Normal,5.424950017481403,Masculino,<45
-61,1,4,138,166,0,2,125,1,3.6,2,1.0,3.0,Cardíaco,5.117993812416755,Masculino,55-64
-42,1,4,136,315,0,0,125,1,1.8,2,0.0,6.0,Cardíaco,5.755742213586912,Masculino,<45
-59,1,3,126,218,1,0,134,0,2.2,2,1.0,6.0,Cardíaco,5.389071729816501,Masculino,55-64
-40,1,4,152,223,0,0,181,0,0.0,1,0.0,7.0,Cardíaco,5.4116460518550396,Masculino,<45
-42,1,3,130,180,0,0,150,0,0.0,1,0.0,3.0,Normal,5.198497031265826,Masculino,<45
-61,1,4,140,207,0,2,138,1,1.9,1,1.0,7.0,Cardíaco,5.337538079701318,Masculino,55-64
-66,1,4,160,228,0,2,138,0,2.3,1,0.0,6.0,Normal,5.43372200355424,Masculino,65+
-46,1,4,140,311,0,0,120,1,1.8,2,2.0,7.0,Cardíaco,5.7430031878094825,Masculino,45-54
-71,0,4,112,149,0,0,125,0,1.6,2,0.0,3.0,Normal,5.0106352940962555,Feminino,65+
-59,1,1,134,204,0,0,162,0,0.8,1,2.0,3.0,Cardíaco,5.3230099791384085,Masculino,55-64
-64,1,1,170,227,0,2,155,0,0.6,2,0.0,7.0,Normal,5.429345628954441,Masculino,55-64
-66,0,3,146,278,0,2,152,0,0.0,2,1.0,3.0,Normal,5.631211781821365,Feminino,65+
-39,0,3,138,220,0,0,152,0,0.0,2,0.0,3.0,Normal,5.3981627015177525,Feminino,<45
-57,1,2,154,232,0,2,164,0,0.0,1,1.0,3.0,Cardíaco,5.4510384535657,Masculino,55-64
-58,0,4,130,197,0,0,131,0,0.6,2,0.0,3.0,Normal,5.288267030694535,Feminino,55-64
-57,1,4,110,335,0,0,143,1,3.0,2,1.0,7.0,Cardíaco,5.817111159963204,Masculino,55-64
-47,1,3,130,253,0,0,179,0,0.0,1,0.0,3.0,Normal,5.537334267018537,Masculino,45-54
-55,0,4,128,205,0,1,130,1,2.0,2,1.0,7.0,Cardíaco,5.327876168789581,Feminino,45-54
-35,1,2,122,192,0,0,174,0,0.0,1,0.0,3.0,Normal,5.262690188904886,Masculino,<45
-61,1,4,148,203,0,0,161,0,0.0,1,1.0,7.0,Cardíaco,5.318119993844216,Masculino,55-64
-58,1,4,114,318,0,1,140,0,4.4,3,3.0,6.0,Cardíaco,5.765191102784844,Masculino,55-64
-58,0,4,170,225,1,2,146,1,2.8,2,2.0,6.0,Cardíaco,5.420534999272286,Feminino,55-64
-56,1,2,130,221,0,2,163,0,0.0,1,0.0,7.0,Normal,5.402677381872279,Masculino,55-64
-56,1,2,120,240,0,0,169,0,0.0,3,0.0,3.0,Normal,5.484796933490655,Masculino,55-64
-67,1,3,152,212,0,2,150,0,0.8,2,0.0,7.0,Cardíaco,5.3612921657094255,Masculino,65+
-55,0,2,132,342,0,0,166,0,1.2,1,0.0,3.0,Normal,5.8377304471659395,Feminino,45-54
-44,1,4,120,169,0,0,144,1,2.8,3,0.0,6.0,Cardíaco,5.135798437050262,Masculino,<45
-63,1,4,140,187,0,2,144,1,4.0,1,2.0,7.0,Cardíaco,5.236441962829949,Masculino,55-64
-63,0,4,124,197,0,0,136,1,0.0,2,0.0,3.0,Cardíaco,5.288267030694535,Feminino,55-64
-41,1,2,120,157,0,0,182,0,0.0,1,0.0,3.0,Normal,5.062595033026967,Masculino,<45
-59,1,4,164,176,1,2,90,0,1.0,2,2.0,6.0,Cardíaco,5.176149732573829,Masculino,55-64
-57,0,4,140,241,0,0,123,1,0.2,2,0.0,7.0,Cardíaco,5.488937726156687,Feminino,55-64
-45,1,1,110,264,0,0,132,0,1.2,2,0.0,7.0,Cardíaco,5.579729825986222,Masculino,<45
-68,1,4,144,193,1,0,141,0,3.4,2,2.0,7.0,Cardíaco,5.267858159063328,Masculino,65+
-57,1,4,130,131,0,0,115,1,1.2,2,1.0,7.0,Cardíaco,4.882801922586371,Masculino,55-64
-57,0,2,130,236,0,2,174,0,0.0,2,1.0,3.0,Cardíaco,5.4680601411351315,Feminino,55-64
+student_id,gender,study_time_hours,attendance_percent,sleep_hours,parental_education,internet_access,extracurricular_activities,part_time_job,previous_grade,final_exam_score,final_grade,situacao
+1,Male,4.0,98.0,6.5,Bachelors,Yes,Yes,No,76.9,100.0,A,Desempenho Alto
+2,Female,6.3,100.0,5.7,High School,Yes,Yes,Yes,75.5,100.0,A,Desempenho Alto
+3,Male,4.9,85.3,7.9,Bachelors,Yes,No,Yes,88.5,97.3,A,Desempenho Alto
+4,Male,2.6,77.5,8.0,Não informado,Yes,Yes,No,85.1,83.8,B,Desempenho Alto
+5,Male,2.2,89.6,4.6,Bachelors,Yes,No,Yes,61.8,68.3,D,Desempenho Baixo
+6,Female,4.2,78.2,5.7,High School,Yes,No,No,79.8,81.6,B,Desempenho Baixo
+7,Male,1.5,100.0,5.0,High School,Yes,Yes,Yes,58.6,69.6,D,Desempenho Baixo
+8,Male,6.2,86.4,6.0,High School,Yes,Yes,No,78.4,88.0,B,Desempenho Alto
+9,Male,5.3,81.3,6.7,Bachelors,Yes,No,No,63.8,84.4,B,Desempenho Alto
+10,Female,2.8,86.8,5.1,Bachelors,Yes,Yes,No,57.7,74.3,C,Desempenho Baixo
+11,Male,0.9,71.5,5.7,High School,Yes,No,Yes,73.4,68.9,D,Desempenho Baixo
+12,Male,5.5,75.3,5.6,Não informado,Yes,Yes,No,37.9,76.7,C,Desempenho Baixo
+13,Male,3.3,97.0,7.0,Masters,Yes,Yes,Yes,49.0,82.6,B,Desempenho Baixo
+14,Male,5.4,78.4,6.9,Bachelors,No,No,No,67.9,93.3,A,Desempenho Alto
+15,Female,1.1,74.5,5.9,Masters,Yes,Yes,Yes,71.0,73.9,C,Desempenho Baixo
+16,Male,2.6,90.4,7.0,High School,Yes,Yes,No,65.6,84.8,B,Desempenho Alto
+17,Female,3.5,96.9,6.1,Bachelors,Yes,Yes,No,51.0,81.5,B,Desempenho Baixo
+18,Female,3.6,92.2,6.5,Bachelors,Yes,Yes,Yes,60.2,75.5,C,Desempenho Baixo
+19,Female,2.8,95.0,8.8,Masters,No,Yes,No,74.7,89.7,B,Desempenho Alto
+20,Male,4.4,77.4,8.4,Masters,No,No,Yes,77.0,92.8,A,Desempenho Alto
+21,Female,1.9,70.8,5.2,High School,Yes,Yes,No,69.8,73.5,C,Desempenho Baixo
+22,Male,3.3,100.0,7.8,Não informado,Yes,Yes,No,83.9,100.0,A,Desempenho Alto
+23,Female,3.7,81.8,7.8,High School,No,No,No,74.8,73.4,C,Desempenho Baixo
+24,Female,4.3,82.5,5.4,PhD,No,Yes,No,61.0,71.2,C,Desempenho Baixo
+25,Female,4.6,98.3,7.8,Não informado,Yes,Yes,Yes,66.6,97.2,A,Desempenho Alto
+26,Female,1.8,90.6,8.6,High School,Yes,No,No,53.2,76.0,C,Desempenho Baixo
+27,Female,1.2,89.6,5.5,Masters,Yes,No,Yes,68.7,78.7,C,Desempenho Baixo
+28,Female,5.4,100.0,5.7,High School,No,No,No,83.3,97.4,A,Desempenho Alto
+29,Female,4.0,78.6,8.0,Bachelors,Yes,No,No,78.2,84.2,B,Desempenho Alto
+30,Female,2.4,94.3,7.1,Bachelors,Yes,Yes,No,86.8,89.8,B,Desempenho Alto
+31,Male,5.8,85.6,7.5,Bachelors,Yes,No,Yes,66.4,82.4,B,Desempenho Baixo
+32,Male,3.7,87.7,7.2,Não informado,Yes,Yes,No,86.2,87.7,B,Desempenho Alto
+33,Female,5.3,100.0,7.3,Masters,Yes,Yes,No,67.7,100.0,A,Desempenho Alto
+34,Female,3.6,90.1,5.2,Bachelors,No,Yes,No,87.7,93.3,A,Desempenho Alto
+35,Female,6.6,90.4,8.1,Masters,Yes,Yes,Yes,69.7,100.0,A,Desempenho Alto
+36,Male,6.1,95.7,8.2,Não informado,Yes,Yes,Yes,78.5,92.9,A,Desempenho Alto
+37,Female,3.1,81.4,6.5,High School,Yes,No,Yes,87.7,83.2,B,Desempenho Baixo
+38,Male,5.0,76.6,6.7,Não informado,Yes,Yes,No,67.7,81.1,B,Desempenho Baixo
+39,Male,4.5,74.6,5.0,High School,Yes,Yes,Yes,72.6,89.5,B,Desempenho Alto
+40,Male,5.6,65.3,7.4,Masters,Yes,Yes,No,85.5,91.6,A,Desempenho Alto
+41,Male,2.1,100.0,7.5,High School,Yes,Yes,Yes,68.4,75.3,C,Desempenho Baixo
+42,Male,4.5,74.0,6.7,High School,Yes,No,No,54.1,79.0,C,Desempenho Baixo
+43,Female,5.1,82.8,8.1,Bachelors,Yes,Yes,No,95.7,100.0,A,Desempenho Alto
+44,Female,0.9,82.2,6.4,Bachelors,Yes,Yes,No,64.4,79.2,C,Desempenho Baixo
+45,Female,1.7,88.1,7.5,Bachelors,No,Yes,No,71.9,70.8,C,Desempenho Baixo
+46,Female,0.5,93.2,5.6,High School,No,No,Yes,83.9,61.8,D,Desempenho Baixo
+47,Female,3.1,93.6,6.8,Bachelors,Yes,Yes,Yes,62.7,68.0,D,Desempenho Baixo
+48,Male,4.6,79.2,6.6,Não informado,Yes,Yes,Yes,57.9,80.3,B,Desempenho Baixo
+49,Female,5.8,83.3,7.1,Bachelors,No,Yes,No,73.0,88.6,B,Desempenho Alto
+50,Female,3.6,87.8,6.4,High School,Yes,Yes,No,48.5,69.4,D,Desempenho Baixo
+51,Male,5.9,82.5,6.6,Bachelors,Yes,Yes,No,66.5,100.0,A,Desempenho Alto
+52,Female,1.4,100.0,7.8,High School,No,No,No,72.9,81.8,B,Desempenho Baixo
+53,Male,0.9,89.9,6.3,Masters,Yes,No,No,66.8,72.6,C,Desempenho Baixo
+54,Female,3.4,92.3,4.9,Masters,Yes,No,No,51.5,85.3,B,Desempenho Alto
+55,Male,4.1,91.6,8.9,Bachelors,No,Yes,No,89.1,99.8,A,Desempenho Alto
+56,Female,3.5,96.7,8.5,Bachelors,Yes,Yes,Yes,71.2,84.3,B,Desempenho Alto
+57,Female,0.5,86.8,5.2,Masters,Yes,Yes,No,87.2,71.5,C,Desempenho Baixo
+58,Male,3.4,72.0,7.6,Bachelors,Yes,No,No,66.9,84.3,B,Desempenho Alto
+59,Male,1.5,89.0,6.2,Masters,Yes,No,No,59.4,74.5,C,Desempenho Baixo
+60,Male,4.5,78.5,7.1,Bachelors,Yes,No,No,73.2,89.5,B,Desempenho Alto
+61,Male,4.0,79.7,7.2,Masters,Yes,Yes,No,67.4,80.4,B,Desempenho Baixo
+62,Male,2.1,90.9,6.5,Bachelors,No,Yes,Yes,55.9,71.1,C,Desempenho Baixo
+63,Male,2.7,97.4,5.9,Bachelors,Yes,Yes,No,87.6,87.8,B,Desempenho Alto
+64,Male,1.9,85.2,6.0,Não informado,Yes,No,No,62.5,73.0,C,Desempenho Baixo
+65,Male,3.4,88.1,5.7,Bachelors,Yes,No,Yes,47.9,80.8,B,Desempenho Baixo
+66,Female,4.9,100.0,5.8,Bachelors,Yes,No,No,85.9,97.4,A,Desempenho Alto
+67,Female,2.0,87.4,6.7,High School,Yes,Yes,No,63.9,67.8,D,Desempenho Baixo
+68,Male,4.3,100.0,5.9,Bachelors,No,Yes,No,62.7,79.2,C,Desempenho Baixo
+69,Female,2.7,90.7,7.6,Bachelors,No,No,Yes,48.8,73.5,C,Desempenho Baixo
+70,Female,2.3,67.4,8.6,High School,Yes,No,No,90.9,85.1,B,Desempenho Alto
+71,Female,3.3,92.5,6.1,High School,Yes,Yes,No,54.5,79.6,C,Desempenho Baixo
+72,Female,1.9,88.8,7.1,Bachelors,Yes,Yes,No,70.7,77.4,C,Desempenho Baixo
+73,Male,2.7,97.9,7.4,Masters,Yes,Yes,No,81.0,94.6,A,Desempenho Alto
+74,Female,1.7,91.7,7.4,Bachelors,Yes,Yes,No,75.1,77.6,C,Desempenho Baixo
+75,Male,6.4,83.6,6.9,High School,Yes,Yes,No,69.3,99.9,A,Desempenho Alto
+76,Female,3.6,72.8,7.7,Masters,No,No,No,49.6,64.4,D,Desempenho Baixo
+77,Female,2.5,82.9,7.4,High School,Yes,Yes,No,60.3,71.9,C,Desempenho Baixo
+78,Female,3.8,76.5,5.3,Bachelors,Yes,Yes,No,72.3,79.3,C,Desempenho Baixo
+79,Male,3.3,79.2,7.8,High School,Yes,Yes,Yes,60.6,74.9,C,Desempenho Baixo
+80,Female,3.2,90.9,7.9,High School,Yes,No,No,72.4,87.4,B,Desempenho Alto
+81,Male,4.4,100.0,5.9,High School,Yes,No,No,78.2,97.6,A,Desempenho Alto
+82,Female,4.6,88.9,6.8,Bachelors,Yes,Yes,No,81.6,74.5,C,Desempenho Baixo
+83,Male,2.7,73.0,7.6,High School,Yes,No,Yes,55.3,64.1,D,Desempenho Baixo
+84,Female,2.6,89.4,6.5,Bachelors,Yes,No,No,96.4,90.0,A,Desempenho Alto
+85,Male,3.1,97.0,8.1,Bachelors,Yes,Yes,Yes,79.2,99.3,A,Desempenho Alto
+86,Male,0.5,78.9,9.6,Bachelors,Yes,Yes,Yes,70.0,63.9,D,Desempenho Baixo
+87,Female,1.2,83.7,5.9,Bachelors,Yes,No,No,83.1,79.0,C,Desempenho Baixo
+88,Male,5.6,85.1,5.1,Masters,Yes,No,No,98.4,100.0,A,Desempenho Alto
+89,Female,6.0,77.2,7.2,High School,Yes,No,No,52.7,78.9,C,Desempenho Baixo
+90,Female,3.1,91.5,7.7,Bachelors,Yes,No,Yes,67.3,84.5,B,Desempenho Alto
+91,Female,4.4,83.8,6.5,High School,Yes,No,No,41.5,71.7,C,Desempenho Baixo
+92,Female,4.0,89.2,8.5,High School,Yes,Yes,Yes,72.3,86.3,B,Desempenho Alto
+93,Female,8.1,76.1,5.2,Bachelors,Yes,Yes,No,74.4,98.3,A,Desempenho Alto
+94,Female,5.2,80.6,7.6,Bachelors,Yes,Yes,No,69.5,88.1,B,Desempenho Alto
+95,Female,3.3,92.2,6.1,PhD,Yes,Yes,No,62.1,99.6,A,Desempenho Alto
+96,Female,2.1,81.3,8.9,Bachelors,Yes,No,No,45.4,74.8,C,Desempenho Baixo
+97,Female,1.1,100.0,9.2,Não informado,Yes,No,Yes,74.5,87.4,B,Desempenho Alto
+98,Female,3.8,81.0,5.9,High School,No,No,No,87.5,88.5,B,Desempenho Alto
+99,Female,2.4,87.2,6.1,High School,Yes,Yes,Yes,62.9,65.2,D,Desempenho Baixo
+100,Male,1.4,94.3,7.8,High School,No,No,No,75.3,79.2,C,Desempenho Baixo
+101,Male,2.5,70.8,6.3,High School,Yes,Yes,No,51.2,74.5,C,Desempenho Baixo
+102,Female,1.9,67.4,6.7,Bachelors,Yes,Yes,Yes,75.5,66.3,D,Desempenho Baixo
+103,Female,6.0,69.7,6.8,Bachelors,No,No,No,65.3,89.5,B,Desempenho Alto
+104,Female,4.8,97.6,4.5,High School,Yes,No,No,60.9,92.7,A,Desempenho Alto
+105,Female,3.5,79.5,6.8,Não informado,Yes,No,Yes,60.9,87.2,B,Desempenho Alto
+106,Female,5.7,100.0,6.0,Masters,Yes,Yes,Yes,65.3,92.5,A,Desempenho Alto
+107,Female,3.6,79.4,6.2,High School,Yes,Yes,Yes,74.6,75.7,C,Desempenho Baixo
+108,Female,2.2,86.8,8.5,High School,Yes,Yes,No,54.3,74.0,C,Desempenho Baixo
+109,Female,5.8,100.0,5.3,High School,Yes,Yes,No,65.2,100.0,A,Desempenho Alto
+110,Male,4.3,100.0,7.8,High School,No,No,Yes,69.5,75.5,C,Desempenho Baixo
+111,Female,1.9,100.0,6.5,High School,Yes,No,Yes,56.8,61.7,D,Desempenho Baixo
+112,Male,3.2,97.1,6.5,Bachelors,No,No,No,91.6,91.4,A,Desempenho Alto
+113,Female,2.2,95.2,7.7,High School,No,Yes,No,59.8,72.7,C,Desempenho Baixo
+114,Female,1.4,90.9,7.2,Bachelors,Yes,No,No,62.0,74.6,C,Desempenho Baixo
+115,Male,4.9,92.8,7.5,Não informado,Yes,Yes,No,58.3,96.5,A,Desempenho Alto
+116,Female,6.4,79.5,8.0,Masters,No,No,Yes,91.6,94.5,A,Desempenho Alto
+117,Male,1.4,76.8,6.4,Não informado,No,Yes,No,76.6,59.3,F,Desempenho Baixo
+118,Female,4.3,85.0,6.1,High School,Yes,Yes,No,58.8,96.2,A,Desempenho Alto
+119,Female,2.5,83.3,5.5,Bachelors,Yes,Yes,Yes,83.3,75.3,C,Desempenho Baixo
+120,Male,2.8,80.5,5.8,Bachelors,Yes,No,No,72.4,73.3,C,Desempenho Baixo
+121,Female,2.6,92.0,10.0,High School,Yes,Yes,No,73.1,95.8,A,Desempenho Alto
+122,Male,2.2,94.6,8.3,High School,Yes,Yes,No,65.9,81.0,B,Desempenho Baixo
+123,Female,3.6,85.9,5.2,Masters,Yes,No,Yes,61.0,76.5,C,Desempenho Baixo
+124,Male,2.3,99.8,5.2,Bachelors,Yes,Yes,No,74.1,88.1,B,Desempenho Alto
+125,Male,3.9,73.6,7.4,Bachelors,Yes,Yes,No,63.5,88.1,B,Desempenho Alto
+126,Female,3.4,83.1,7.5,Bachelors,Yes,Yes,No,91.8,92.1,A,Desempenho Alto
+127,Female,3.1,77.8,7.5,Bachelors,Yes,Yes,No,54.8,85.2,B,Desempenho Alto
+128,Male,2.1,66.3,6.5,High School,Yes,No,Yes,88.4,63.0,D,Desempenho Baixo
+129,Female,2.6,84.2,6.6,High School,Yes,No,Yes,68.7,81.1,B,Desempenho Baixo
+130,Female,4.6,83.8,7.2,High School,Yes,Yes,No,73.6,87.1,B,Desempenho Alto
+131,Female,4.3,100.0,6.9,High School,Yes,No,Yes,80.0,100.0,A,Desempenho Alto
+132,Male,2.0,91.3,4.1,Não informado,Yes,Yes,No,62.4,75.7,C,Desempenho Baixo
+133,Male,3.6,74.8,6.5,Bachelors,No,Yes,No,80.4,77.3,C,Desempenho Baixo
+134,Male,4.6,100.0,5.8,Masters,Yes,Yes,No,37.5,85.6,B,Desempenho Alto
+135,Male,1.0,97.2,7.0,High School,Yes,Yes,No,61.4,80.8,B,Desempenho Baixo
+136,Male,4.3,90.8,10.0,Bachelors,Yes,Yes,No,58.9,94.5,A,Desempenho Alto
+137,Male,2.5,82.7,7.2,High School,No,No,Yes,55.0,59.7,F,Desempenho Baixo
+138,Male,4.4,75.4,6.4,High School,Yes,No,No,67.4,80.9,B,Desempenho Baixo
+139,Male,2.4,81.3,7.9,High School,Yes,Yes,No,74.6,82.6,B,Desempenho Baixo
+140,Male,0.8,95.9,7.4,Masters,Yes,No,No,78.4,80.2,B,Desempenho Baixo
+141,Female,1.1,100.0,7.3,Masters,Yes,No,Yes,72.9,82.4,B,Desempenho Baixo
+142,Male,3.6,100.0,7.5,Bachelors,Yes,No,No,62.0,75.9,C,Desempenho Baixo
+143,Female,3.9,80.1,9.3,Bachelors,Yes,No,Yes,74.4,88.5,B,Desempenho Alto
+144,Female,2.1,73.8,5.4,Não informado,Yes,Yes,Yes,71.5,69.6,D,Desempenho Baixo
+145,Female,4.5,86.4,7.4,High School,Yes,No,Yes,81.2,86.8,B,Desempenho Alto
+146,Male,1.0,67.3,5.7,High School,Yes,No,No,79.3,65.2,D,Desempenho Baixo
+147,Male,3.4,88.2,7.5,High School,Yes,No,Yes,70.4,82.0,B,Desempenho Baixo
+148,Male,1.7,83.5,5.7,Masters,Yes,Yes,Yes,59.2,46.8,F,Desempenho Baixo
+149,Male,2.5,80.3,6.3,Não informado,Yes,Yes,Yes,62.2,68.6,D,Desempenho Baixo
+150,Female,3.6,69.1,6.4,High School,Yes,Yes,Yes,63.4,69.2,D,Desempenho Baixo
+151,Male,2.2,90.1,8.0,PhD,Yes,Yes,No,66.2,84.7,B,Desempenho Alto
+152,Male,2.9,79.7,7.9,Masters,Yes,Yes,Yes,73.2,75.9,C,Desempenho Baixo
+153,Male,5.0,73.3,5.3,High School,Yes,No,Yes,78.6,84.7,B,Desempenho Alto
+154,Male,2.6,56.3,6.9,Bachelors,No,Yes,No,69.4,75.7,C,Desempenho Baixo
+155,Male,4.8,84.7,5.9,Bachelors,Yes,No,No,70.2,95.4,A,Desempenho Alto
+156,Female,1.8,100.0,5.3,Não informado,Yes,Yes,No,71.7,87.6,B,Desempenho Alto
+157,Male,4.3,100.0,6.5,High School,Yes,No,No,63.8,87.7,B,Desempenho Alto
+158,Female,5.7,80.4,6.4,Masters,Yes,Yes,Yes,58.9,89.3,B,Desempenho Alto
+159,Male,0.5,79.0,9.7,High School,Yes,Yes,No,48.9,63.7,D,Desempenho Baixo
+160,Female,2.3,89.7,7.3,Masters,Yes,No,Yes,61.7,74.0,C,Desempenho Baixo
+161,Male,4.4,75.0,5.1,Bachelors,Yes,No,No,75.7,87.9,B,Desempenho Alto
+162,Male,3.2,88.0,6.1,Bachelors,Yes,No,No,61.6,76.6,C,Desempenho Baixo
+163,Female,4.1,92.7,8.0,Masters,Yes,Yes,Yes,67.1,97.3,A,Desempenho Alto
+164,Female,2.6,97.3,9.3,Masters,Yes,Yes,No,75.6,90.2,A,Desempenho Alto
+165,Female,3.6,84.0,4.9,PhD,Yes,No,No,76.2,88.7,B,Desempenho Alto
+166,Male,3.3,83.0,4.5,High School,Yes,Yes,No,57.0,84.8,B,Desempenho Alto
+167,Female,5.3,76.2,9.0,Masters,Yes,No,No,82.0,100.0,A,Desempenho Alto
+168,Male,3.9,76.7,7.3,High School,Yes,Yes,No,83.5,82.1,B,Desempenho Baixo
+169,Male,4.0,82.7,5.8,Bachelors,No,Yes,Yes,56.4,75.1,C,Desempenho Baixo
+170,Female,2.9,88.7,7.4,Bachelors,No,Yes,Yes,60.1,78.1,C,Desempenho Baixo
+171,Female,2.8,94.1,3.6,Bachelors,Yes,Yes,No,84.3,92.9,A,Desempenho Alto
+172,Male,2.9,77.0,6.8,Bachelors,Yes,No,No,68.2,71.8,C,Desempenho Baixo
+173,Male,4.1,99.9,7.2,Não informado,Yes,No,No,43.4,78.5,C,Desempenho Baixo
+174,Female,2.9,82.3,7.9,High School,Yes,Yes,No,53.2,82.6,B,Desempenho Baixo
+175,Female,3.9,84.8,5.6,Masters,Yes,No,No,67.0,79.2,C,Desempenho Baixo
+176,Female,6.6,77.5,6.9,Bachelors,Yes,Yes,No,56.0,89.7,B,Desempenho Alto
+177,Male,4.8,60.8,5.7,High School,Yes,Yes,No,65.0,89.2,B,Desempenho Alto
+178,Male,3.0,93.8,7.1,High School,No,Yes,No,70.4,81.7,B,Desempenho Baixo
+179,Male,5.3,92.4,5.7,Não informado,Yes,No,No,87.5,96.7,A,Desempenho Alto
+180,Male,2.9,82.2,6.3,PhD,Yes,No,No,66.5,73.7,C,Desempenho Baixo
+181,Male,0.5,85.7,5.6,Não informado,Yes,No,No,82.9,77.1,C,Desempenho Baixo
+182,Male,2.0,90.2,7.6,Não informado,Yes,No,Yes,87.1,76.5,C,Desempenho Baixo
+183,Female,0.7,69.4,7.8,High School,Yes,No,No,87.2,73.2,C,Desempenho Baixo
+184,Male,3.0,79.7,6.5,Bachelors,Yes,No,No,73.4,83.6,B,Desempenho Baixo
+185,Male,3.5,92.9,6.8,Masters,Yes,No,No,46.4,85.8,B,Desempenho Alto
+186,Male,6.0,72.5,5.1,Bachelors,Yes,No,No,75.5,95.7,A,Desempenho Alto
+187,Female,4.0,87.9,6.4,Bachelors,Yes,Yes,No,82.6,89.2,B,Desempenho Alto
+188,Male,3.2,71.4,6.7,Bachelors,Yes,Yes,Yes,69.0,83.1,B,Desempenho Baixo
+189,Male,4.7,89.7,9.9,Bachelors,Yes,Yes,No,90.9,100.0,A,Desempenho Alto
+190,Female,0.5,84.6,5.5,Bachelors,Yes,Yes,No,80.3,67.2,D,Desempenho Baixo
+191,Male,3.9,68.8,8.6,High School,Yes,No,No,76.8,84.6,B,Desempenho Alto
+192,Male,4.7,96.6,8.0,Bachelors,Yes,Yes,Yes,83.0,100.0,A,Desempenho Alto
+193,Male,1.3,77.7,7.1,Bachelors,Yes,No,No,74.0,75.2,C,Desempenho Baixo
+194,Male,5.2,76.9,8.9,Bachelors,Yes,Yes,No,40.1,81.1,B,Desempenho Baixo
+195,Male,4.0,87.0,7.2,High School,Yes,Yes,No,64.0,96.5,A,Desempenho Alto
+196,Female,2.9,96.5,7.3,Masters,No,Yes,No,84.4,79.8,C,Desempenho Baixo
+197,Female,4.4,74.8,6.7,High School,Yes,No,No,60.3,73.4,C,Desempenho Baixo
+198,Female,6.9,85.6,8.3,Bachelors,Yes,Yes,No,67.3,92.2,A,Desempenho Alto
+199,Male,3.8,89.3,8.1,Masters,Yes,Yes,No,57.5,87.3,B,Desempenho Alto
+200,Male,3.9,91.9,6.0,Bachelors,No,No,No,91.4,92.5,A,Desempenho Alto
+201,Male,2.8,86.8,5.2,High School,Yes,No,Yes,90.2,94.6,A,Desempenho Alto
+202,Female,2.2,81.3,6.6,Masters,Yes,Yes,No,59.4,75.5,C,Desempenho Baixo
+203,Male,4.7,76.7,5.8,Bachelors,Yes,Yes,No,71.8,85.3,B,Desempenho Alto
+204,Male,2.2,85.9,6.7,Masters,Yes,Yes,No,61.8,76.7,C,Desempenho Baixo
+205,Female,3.6,74.3,8.3,Masters,Yes,No,No,77.4,86.8,B,Desempenho Alto
+206,Male,2.8,55.8,6.3,Bachelors,Yes,Yes,Yes,76.1,61.1,D,Desempenho Baixo
+207,Female,4.2,89.4,6.7,Bachelors,Yes,Yes,Yes,79.7,100.0,A,Desempenho Alto
+208,Female,4.0,94.0,6.9,High School,No,Yes,No,74.0,90.9,A,Desempenho Alto
+209,Female,5.1,61.4,7.8,High School,Yes,Yes,Yes,100.0,96.1,A,Desempenho Alto
+210,Male,2.7,74.9,4.1,Bachelors,Yes,No,No,57.7,73.1,C,Desempenho Baixo
+211,Male,3.1,91.2,6.1,Bachelors,Yes,Yes,No,49.5,81.2,B,Desempenho Baixo
+212,Male,2.0,100.0,7.1,Bachelors,Yes,Yes,No,65.3,81.8,B,Desempenho Baixo
+213,Male,2.8,85.2,8.2,High School,Yes,Yes,Yes,51.2,70.0,C,Desempenho Baixo
+214,Male,4.1,77.7,6.2,High School,Yes,Yes,Yes,52.1,78.5,C,Desempenho Baixo
+215,Male,4.6,83.2,4.5,Bachelors,Yes,Yes,No,58.0,84.7,B,Desempenho Alto
+216,Male,2.1,98.7,7.5,High School,Yes,No,No,58.9,74.7,C,Desempenho Baixo
+217,Female,4.8,78.5,6.0,Masters,Yes,No,No,58.5,91.2,A,Desempenho Alto
+218,Male,5.5,77.0,5.4,High School,Yes,No,No,76.2,93.4,A,Desempenho Alto
+219,Female,4.1,80.2,6.1,Bachelors,Yes,No,No,63.9,86.8,B,Desempenho Alto
+220,Male,6.3,75.5,6.6,Não informado,Yes,No,No,67.8,100.0,A,Desempenho Alto
+221,Male,2.3,86.2,6.1,High School,Yes,Yes,No,80.7,84.3,B,Desempenho Alto
+222,Male,1.6,100.0,4.2,Bachelors,No,No,No,60.8,71.5,C,Desempenho Baixo
+223,Female,0.8,88.2,7.9,High School,No,No,Yes,66.8,70.5,C,Desempenho Baixo
+224,Female,5.7,82.5,8.3,Bachelors,Yes,No,Yes,74.4,89.9,B,Desempenho Alto
+225,Female,4.5,82.1,7.6,Bachelors,Yes,Yes,No,46.7,81.1,B,Desempenho Baixo
+226,Female,3.4,69.4,5.4,Bachelors,Yes,Yes,No,41.4,67.4,D,Desempenho Baixo
+227,Male,3.9,93.8,6.6,Bachelors,Yes,No,Yes,74.2,82.2,B,Desempenho Baixo
+228,Female,1.8,84.2,6.8,PhD,Yes,No,Yes,75.9,90.0,A,Desempenho Alto
+229,Male,7.2,83.2,7.5,High School,Yes,No,No,94.8,100.0,A,Desempenho Alto
+230,Male,3.7,100.0,7.6,High School,Yes,Yes,Yes,71.9,82.7,B,Desempenho Baixo
+231,Female,3.7,88.0,5.9,PhD,Yes,Yes,No,79.8,98.3,A,Desempenho Alto
+232,Female,4.6,77.5,6.9,Bachelors,Yes,Yes,No,67.7,91.5,A,Desempenho Alto
+233,Female,4.2,80.7,7.3,PhD,Yes,No,No,73.6,82.2,B,Desempenho Baixo
+234,Female,3.8,96.5,8.5,Bachelors,Yes,Yes,No,90.0,100.0,A,Desempenho Alto
+235,Female,2.3,86.1,7.6,Masters,Yes,Yes,No,44.5,80.2,B,Desempenho Baixo
+236,Female,4.2,70.6,7.7,Bachelors,Yes,No,No,75.0,85.7,B,Desempenho Alto
+237,Female,6.3,94.2,6.9,Masters,Yes,Yes,No,95.6,100.0,A,Desempenho Alto
+238,Female,5.5,78.3,8.5,Não informado,Yes,No,No,73.4,84.4,B,Desempenho Alto
+239,Male,5.9,100.0,7.3,Bachelors,Yes,Yes,No,89.8,100.0,A,Desempenho Alto
+240,Female,2.7,95.8,5.8,High School,Yes,No,Yes,62.4,84.6,B,Desempenho Alto
+241,Female,2.0,80.5,8.5,High School,Yes,No,Yes,69.6,80.6,B,Desempenho Baixo
+242,Male,3.3,97.8,7.6,High School,Yes,No,Yes,70.4,85.1,B,Desempenho Alto
+243,Female,3.6,85.7,6.3,High School,Yes,No,Yes,43.4,69.4,D,Desempenho Baixo
+244,Male,5.1,93.5,6.2,High School,Yes,Yes,No,56.0,92.2,A,Desempenho Alto
+245,Male,1.0,89.8,7.2,Bachelors,Yes,Yes,No,56.8,76.2,C,Desempenho Baixo
+246,Female,5.8,76.5,7.4,Bachelors,Yes,Yes,No,79.9,100.0,A,Desempenho Alto
+247,Male,3.3,78.6,7.0,Bachelors,Yes,No,No,80.5,92.2,A,Desempenho Alto
+248,Male,2.9,95.3,7.2,Bachelors,No,No,No,73.9,76.5,C,Desempenho Baixo
+249,Male,2.0,81.7,8.8,High School,Yes,Yes,No,79.9,82.7,B,Desempenho Baixo
+250,Male,1.0,81.0,8.1,High School,Yes,No,No,68.0,67.1,D,Desempenho Baixo
+251,Female,4.7,75.4,7.0,High School,Yes,Yes,Yes,84.4,88.4,B,Desempenho Alto
+252,Male,3.6,89.2,7.9,Bachelors,Yes,No,Yes,70.1,91.0,A,Desempenho Alto
+253,Female,1.6,100.0,5.6,High School,No,No,No,70.7,75.8,C,Desempenho Baixo
+254,Male,1.6,74.3,7.3,High School,Yes,Yes,No,66.8,88.3,B,Desempenho Alto
+255,Male,3.0,85.2,9.0,Bachelors,Yes,Yes,Yes,78.2,87.6,B,Desempenho Alto
+256,Male,6.0,99.1,6.5,Masters,Yes,Yes,Yes,64.9,96.8,A,Desempenho Alto
+257,Male,3.1,84.2,5.8,High School,Yes,No,No,81.7,86.7,B,Desempenho Alto
+258,Female,1.2,89.5,6.0,Bachelors,Yes,Yes,Yes,56.4,63.7,D,Desempenho Baixo
+259,Female,3.1,74.4,5.5,Masters,Yes,Yes,No,56.8,73.0,C,Desempenho Baixo
+260,Male,3.1,89.3,5.9,Masters,Yes,Yes,No,78.2,94.3,A,Desempenho Alto
+261,Male,0.5,83.1,6.4,Não informado,Yes,Yes,No,68.9,71.3,C,Desempenho Baixo
+262,Female,3.4,94.9,5.1,High School,Yes,Yes,No,64.6,79.7,C,Desempenho Baixo
+263,Male,3.2,96.9,6.8,High School,No,No,No,80.7,81.2,B,Desempenho Baixo
+264,Male,4.5,100.0,7.9,PhD,Yes,Yes,No,62.7,91.1,A,Desempenho Alto
+265,Male,6.3,90.8,5.7,Bachelors,Yes,No,No,67.6,97.5,A,Desempenho Alto
+266,Female,5.2,88.3,8.6,Bachelors,Yes,No,No,86.8,100.0,A,Desempenho Alto
+267,Female,3.1,86.9,7.4,Masters,Yes,Yes,Yes,88.5,81.6,B,Desempenho Baixo
+268,Female,1.8,81.5,8.0,Masters,Yes,Yes,No,88.9,83.9,B,Desempenho Alto
+269,Male,7.4,88.4,6.0,Não informado,Yes,No,No,66.6,100.0,A,Desempenho Alto
+270,Male,3.6,82.0,7.8,Não informado,Yes,No,No,84.8,80.2,B,Desempenho Baixo
+271,Female,3.5,86.7,5.5,Masters,Yes,Yes,No,58.6,75.1,C,Desempenho Baixo
+272,Female,3.5,98.2,7.9,High School,No,Yes,No,59.1,78.2,C,Desempenho Baixo
+273,Female,3.8,74.9,7.0,PhD,Yes,Yes,Yes,41.8,64.7,D,Desempenho Baixo
+274,Female,3.3,96.4,7.5,High School,Yes,No,No,90.1,97.8,A,Desempenho Alto
+275,Male,2.6,98.2,5.4,High School,No,Yes,No,59.6,74.4,C,Desempenho Baixo
+276,Female,2.7,83.8,5.7,PhD,Yes,Yes,No,68.5,76.4,C,Desempenho Baixo
+277,Male,3.5,63.8,7.5,High School,Yes,No,No,59.1,76.3,C,Desempenho Baixo
+278,Female,2.7,78.9,5.7,High School,Yes,No,Yes,78.3,88.3,B,Desempenho Alto
+279,Male,2.4,98.0,7.4,High School,Yes,Yes,No,65.5,94.0,A,Desempenho Alto
+280,Female,3.7,84.8,5.2,PhD,No,Yes,Yes,54.3,58.8,F,Desempenho Baixo
+281,Female,3.1,75.0,7.8,Bachelors,No,No,No,75.3,81.1,B,Desempenho Baixo
+282,Female,5.8,80.0,5.3,Masters,Yes,Yes,No,52.8,84.5,B,Desempenho Alto
+283,Female,0.5,93.4,7.5,High School,Yes,Yes,Yes,60.0,69.9,D,Desempenho Baixo
+284,Male,5.1,90.5,7.6,Masters,Yes,No,No,44.7,82.2,B,Desempenho Baixo
+285,Female,5.4,82.6,6.0,Masters,Yes,Yes,Yes,52.9,83.3,B,Desempenho Baixo
+286,Male,0.5,81.3,7.5,High School,Yes,No,Yes,72.1,69.5,D,Desempenho Baixo
+287,Male,3.0,81.1,7.1,Bachelors,Yes,No,No,46.4,68.5,D,Desempenho Baixo
+288,Male,2.9,75.8,6.2,High School,No,Yes,No,52.2,61.5,D,Desempenho Baixo
+289,Male,1.4,100.0,5.6,Não informado,No,Yes,No,70.0,72.3,C,Desempenho Baixo
+290,Female,2.3,81.8,4.4,Bachelors,Yes,No,No,63.5,74.1,C,Desempenho Baixo
+291,Male,1.8,97.2,7.2,Não informado,Yes,No,No,93.9,94.9,A,Desempenho Alto
+292,Male,6.1,100.0,4.9,High School,Yes,No,No,92.0,100.0,A,Desempenho Alto
+293,Male,4.9,95.0,6.9,Masters,Yes,No,Yes,59.6,84.5,B,Desempenho Alto
+294,Female,5.4,80.7,6.5,Masters,Yes,Yes,Yes,76.7,93.7,A,Desempenho Alto
+295,Female,4.6,89.0,7.6,Masters,Yes,No,No,79.0,100.0,A,Desempenho Alto
+296,Female,1.8,84.8,6.4,Não informado,Yes,Yes,No,62.8,81.6,B,Desempenho Baixo
+297,Female,2.7,76.0,6.4,Bachelors,Yes,Yes,No,52.1,70.9,C,Desempenho Baixo
+298,Male,4.2,88.2,7.7,High School,Yes,Yes,No,69.9,89.6,B,Desempenho Alto
+299,Male,1.7,73.2,7.2,Masters,No,Yes,No,67.9,69.2,D,Desempenho Baixo
+300,Female,4.6,96.9,7.2,Masters,Yes,No,Yes,64.8,82.3,B,Desempenho Baixo
+301,Male,3.1,80.4,7.4,Bachelors,Yes,Yes,Yes,75.3,80.9,B,Desempenho Baixo
+302,Male,2.9,87.0,5.0,High School,Yes,Yes,No,61.0,82.4,B,Desempenho Baixo
+303,Male,4.6,87.8,7.7,Bachelors,Yes,Yes,No,56.2,91.0,A,Desempenho Alto
+304,Female,4.2,82.4,7.5,High School,No,No,No,71.3,81.6,B,Desempenho Baixo
+305,Female,3.0,90.9,5.6,Bachelors,Yes,No,Yes,74.6,83.2,B,Desempenho Baixo
+306,Male,5.2,80.3,6.5,Bachelors,Yes,Yes,No,55.9,80.7,B,Desempenho Baixo
+307,Female,1.9,93.7,6.8,Masters,Yes,Yes,Yes,81.1,87.2,B,Desempenho Alto
+308,Female,4.4,71.5,6.6,High School,Yes,Yes,Yes,48.8,72.8,C,Desempenho Baixo
+309,Female,4.4,86.3,7.2,Bachelors,Yes,No,No,63.1,85.2,B,Desempenho Alto
+310,Female,3.0,100.0,8.5,High School,Yes,No,Yes,66.9,83.3,B,Desempenho Baixo
+311,Female,4.0,75.0,8.1,High School,Yes,Yes,No,62.4,82.6,B,Desempenho Baixo
+312,Male,1.6,78.2,5.2,Masters,Yes,No,Yes,63.2,63.4,D,Desempenho Baixo
+313,Female,4.9,90.1,7.5,Não informado,Yes,Yes,No,92.5,100.0,A,Desempenho Alto
+314,Male,3.2,86.8,8.4,Bachelors,Yes,No,No,59.8,79.4,C,Desempenho Baixo
+315,Male,2.7,88.5,7.3,Masters,Yes,Yes,No,99.3,100.0,A,Desempenho Alto
+316,Female,5.1,89.9,8.1,PhD,Yes,Yes,No,75.2,100.0,A,Desempenho Alto
+317,Male,2.4,91.3,9.2,Masters,No,Yes,Yes,71.1,72.9,C,Desempenho Baixo
+318,Male,1.4,96.1,8.0,High School,No,Yes,No,75.7,79.2,C,Desempenho Baixo
+319,Male,1.2,89.1,7.1,Não informado,Yes,No,No,100.0,84.2,B,Desempenho Alto
+320,Female,4.4,82.6,8.1,Bachelors,Yes,Yes,Yes,58.1,80.7,B,Desempenho Baixo
+321,Female,1.6,91.7,7.0,High School,Yes,No,No,56.6,85.3,B,Desempenho Alto
+322,Male,6.1,100.0,6.8,High School,Yes,No,Yes,60.9,93.1,A,Desempenho Alto
+323,Female,0.5,83.7,6.4,Bachelors,Yes,Yes,No,70.4,73.5,C,Desempenho Baixo
+324,Female,6.0,75.3,8.7,High School,Yes,Yes,No,49.3,90.8,A,Desempenho Alto
+325,Female,3.8,96.1,5.8,High School,Yes,Yes,Yes,70.3,80.8,B,Desempenho Baixo
+326,Female,3.4,83.8,8.6,High School,Yes,No,No,90.3,88.9,B,Desempenho Alto
+327,Male,2.7,63.3,7.4,Masters,No,Yes,No,71.8,63.7,D,Desempenho Baixo
+328,Male,4.1,93.5,5.1,PhD,Yes,Yes,No,66.5,82.6,B,Desempenho Baixo
+329,Female,3.4,79.6,7.2,High School,Yes,Yes,No,62.6,63.7,D,Desempenho Baixo
+330,Female,5.2,84.1,4.3,PhD,Yes,No,No,80.8,96.6,A,Desempenho Alto
+331,Male,3.7,88.3,7.6,PhD,Yes,Yes,No,60.1,97.0,A,Desempenho Alto
+332,Male,3.7,86.9,7.9,Masters,No,Yes,No,92.2,93.3,A,Desempenho Alto
+333,Female,3.0,92.1,6.1,High School,Yes,Yes,Yes,93.2,82.8,B,Desempenho Baixo
+334,Male,3.4,80.6,6.9,Masters,Yes,Yes,No,73.1,81.2,B,Desempenho Baixo
+335,Female,4.0,90.1,9.1,Não informado,Yes,No,No,69.9,88.7,B,Desempenho Alto
+336,Female,0.9,82.4,6.2,Masters,Yes,Yes,No,82.4,71.2,C,Desempenho Baixo
+337,Male,1.5,92.4,5.5,High School,Yes,No,No,83.1,87.1,B,Desempenho Alto
+338,Male,4.6,91.2,8.6,Bachelors,Yes,No,No,60.3,94.9,A,Desempenho Alto
+339,Female,3.8,75.6,9.2,Bachelors,Yes,No,No,63.7,76.1,C,Desempenho Baixo
+340,Female,3.2,95.9,6.8,Bachelors,Yes,No,No,54.1,85.1,B,Desempenho Alto
+341,Male,3.5,79.6,8.0,High School,Yes,Yes,No,74.9,96.3,A,Desempenho Alto
+342,Female,4.0,93.1,8.4,High School,Yes,Yes,No,78.0,100.0,A,Desempenho Alto
+343,Male,2.7,88.7,5.9,Masters,Yes,No,No,53.8,92.0,A,Desempenho Alto
+344,Female,2.3,100.0,6.2,PhD,Yes,Yes,No,64.5,77.2,C,Desempenho Baixo
+345,Male,3.8,82.8,8.3,High School,Yes,No,No,53.8,97.5,A,Desempenho Alto
+346,Male,2.0,81.5,8.8,Não informado,Yes,Yes,Yes,59.2,70.6,C,Desempenho Baixo
+347,Male,4.1,84.8,7.5,High School,Yes,No,No,76.6,87.2,B,Desempenho Alto
+348,Female,0.9,82.0,5.7,Masters,Yes,No,No,61.2,69.0,D,Desempenho Baixo
+349,Female,5.0,93.0,9.2,Masters,Yes,Yes,Yes,66.4,90.2,A,Desempenho Alto
+350,Male,4.2,68.8,6.2,Masters,Yes,Yes,Yes,50.5,74.0,C,Desempenho Baixo
+351,Female,3.9,74.5,6.4,Não informado,Yes,No,No,72.2,75.3,C,Desempenho Baixo
+352,Male,5.0,74.3,7.2,High School,Yes,No,No,69.5,86.5,B,Desempenho Alto
+353,Male,6.0,94.5,8.7,PhD,Yes,Yes,No,61.3,100.0,A,Desempenho Alto
+354,Female,5.0,100.0,7.8,High School,Yes,No,Yes,67.7,93.6,A,Desempenho Alto
+355,Female,0.7,84.0,7.3,Masters,Yes,Yes,Yes,72.2,72.0,C,Desempenho Baixo
+356,Male,1.6,83.3,7.4,Masters,Yes,Yes,No,60.2,76.2,C,Desempenho Baixo
+357,Female,2.6,85.7,6.9,Masters,Yes,No,No,52.3,80.9,B,Desempenho Baixo
+358,Female,3.5,96.6,7.5,High School,Yes,No,Yes,91.7,85.3,B,Desempenho Alto
+359,Male,4.3,75.7,3.8,PhD,Yes,No,No,62.4,81.9,B,Desempenho Baixo
+360,Male,2.4,87.4,6.4,High School,Yes,No,No,68.8,78.0,C,Desempenho Baixo
+361,Female,3.8,94.8,7.1,High School,Yes,Yes,Yes,82.1,93.6,A,Desempenho Alto
+362,Male,2.4,90.0,5.4,Masters,Yes,No,Yes,100.0,95.1,A,Desempenho Alto
+363,Male,2.6,86.9,7.3,Bachelors,Yes,Yes,Yes,55.1,66.7,D,Desempenho Baixo
+364,Female,1.4,95.0,6.6,Masters,Yes,Yes,No,75.4,75.6,C,Desempenho Baixo
+365,Male,2.1,58.0,8.9,Bachelors,Yes,Yes,No,61.5,57.4,F,Desempenho Baixo
+366,Male,1.5,91.8,8.7,High School,Yes,Yes,No,63.5,75.4,C,Desempenho Baixo
+367,Female,2.0,78.5,6.2,Masters,Yes,Yes,No,61.4,80.5,B,Desempenho Baixo
+368,Female,5.1,66.7,6.6,Bachelors,No,Yes,No,56.5,75.1,C,Desempenho Baixo
+369,Male,2.1,90.1,6.7,High School,No,Yes,No,69.5,67.8,D,Desempenho Baixo
+370,Male,7.4,98.7,6.3,Masters,Yes,Yes,No,52.3,97.4,A,Desempenho Alto
+371,Female,4.2,83.6,7.0,Bachelors,Yes,No,Yes,81.4,80.2,B,Desempenho Baixo
+372,Female,3.8,94.5,5.9,Bachelors,Yes,Yes,No,70.7,82.8,B,Desempenho Baixo
+373,Female,2.2,100.0,5.4,Bachelors,Yes,Yes,No,75.1,87.8,B,Desempenho Alto
+374,Female,4.6,98.1,7.5,Masters,Yes,No,No,64.4,85.8,B,Desempenho Alto
+375,Male,2.6,100.0,7.6,Masters,Yes,No,No,65.6,91.7,A,Desempenho Alto
+376,Female,3.7,92.4,5.8,Masters,Yes,No,Yes,73.5,84.9,B,Desempenho Alto
+377,Female,7.3,85.8,7.9,High School,Yes,Yes,No,56.0,99.3,A,Desempenho Alto
+378,Male,3.4,69.0,6.0,Masters,Yes,No,No,65.7,74.3,C,Desempenho Baixo
+379,Female,5.2,82.5,7.1,Masters,Yes,Yes,No,59.7,93.3,A,Desempenho Alto
+380,Male,2.4,76.6,7.8,Masters,Yes,Yes,No,59.3,79.4,C,Desempenho Baixo
+381,Female,3.4,100.0,6.8,Bachelors,No,Yes,No,44.7,77.4,C,Desempenho Baixo
+382,Female,6.2,83.2,7.3,PhD,Yes,No,No,86.1,100.0,A,Desempenho Alto
+383,Female,2.6,86.2,6.2,Masters,Yes,Yes,No,61.8,76.8,C,Desempenho Baixo
+384,Male,6.2,90.5,6.6,High School,Yes,Yes,No,84.0,100.0,A,Desempenho Alto
+385,Male,4.6,85.4,6.6,Bachelors,No,Yes,No,82.8,88.6,B,Desempenho Alto
+386,Female,2.7,100.0,5.9,PhD,Yes,No,No,54.6,79.1,C,Desempenho Baixo
+387,Male,4.4,78.8,6.6,High School,Yes,No,No,56.9,79.4,C,Desempenho Baixo
+388,Male,5.0,86.9,4.9,Não informado,Yes,Yes,No,100.0,100.0,A,Desempenho Alto
+389,Male,4.4,77.6,6.2,Masters,Yes,No,Yes,91.0,86.7,B,Desempenho Alto
+390,Male,1.1,71.8,6.5,Bachelors,Yes,Yes,Yes,69.6,69.5,D,Desempenho Baixo
+391,Male,2.4,78.9,6.5,High School,Yes,No,No,73.1,86.3,B,Desempenho Alto
+392,Male,3.1,84.6,6.5,High School,Yes,Yes,No,62.4,87.3,B,Desempenho Alto
+393,Female,3.4,80.7,6.7,Não informado,No,No,No,75.2,72.1,C,Desempenho Baixo
+394,Female,4.4,78.1,7.4,High School,Yes,Yes,No,61.4,92.3,A,Desempenho Alto
+395,Male,3.8,70.9,7.8,Masters,Yes,No,Yes,45.6,67.6,D,Desempenho Baixo
+396,Female,1.5,84.2,6.0,Bachelors,Yes,Yes,No,54.1,72.7,C,Desempenho Baixo
+397,Female,4.1,70.0,5.4,High School,Yes,Yes,No,70.3,76.1,C,Desempenho Baixo
+398,Female,4.4,92.6,5.5,High School,No,Yes,No,56.4,81.2,B,Desempenho Baixo
+399,Female,4.3,85.8,6.2,Bachelors,Yes,Yes,No,69.2,90.4,A,Desempenho Alto
+400,Male,5.1,70.4,6.4,Não informado,Yes,Yes,No,57.1,73.2,C,Desempenho Baixo
+401,Female,4.8,81.9,5.9,Bachelors,Yes,No,Yes,60.6,85.2,B,Desempenho Alto
+402,Female,4.2,77.5,5.2,Bachelors,Yes,Yes,No,80.2,96.4,A,Desempenho Alto
+403,Male,3.4,88.2,6.3,High School,Yes,No,Yes,73.0,81.9,B,Desempenho Baixo
+404,Male,1.0,98.4,7.0,Bachelors,Yes,No,No,69.9,86.5,B,Desempenho Alto
+405,Female,4.1,66.2,7.5,Bachelors,Yes,No,No,80.5,84.7,B,Desempenho Alto
+406,Female,3.8,86.2,6.1,PhD,Yes,No,No,75.8,93.0,A,Desempenho Alto
+407,Female,3.9,83.4,6.3,Bachelors,Yes,No,No,87.4,78.9,C,Desempenho Baixo
+408,Female,1.6,91.7,5.7,Bachelors,Yes,Yes,No,64.5,90.4,A,Desempenho Alto
+409,Female,1.9,87.1,6.8,High School,No,No,No,64.8,80.1,B,Desempenho Baixo
+410,Female,5.1,77.5,5.8,Não informado,Yes,Yes,Yes,54.4,78.1,C,Desempenho Baixo
+411,Male,3.4,81.8,7.5,High School,Yes,No,No,64.9,70.1,C,Desempenho Baixo
+412,Female,4.5,77.0,4.7,High School,Yes,No,No,81.6,90.2,A,Desempenho Alto
+413,Female,3.5,95.8,6.4,Masters,Yes,Yes,No,85.6,86.5,B,Desempenho Alto
+414,Male,3.5,85.2,7.2,Bachelors,Yes,Yes,No,81.5,93.5,A,Desempenho Alto
+415,Male,4.9,100.0,7.0,Bachelors,No,Yes,Yes,48.5,83.3,B,Desempenho Baixo
+416,Male,2.7,84.4,10.0,Bachelors,Yes,No,Yes,83.0,81.2,B,Desempenho Baixo
+417,Male,3.6,77.9,7.2,Masters,No,No,No,47.9,76.0,C,Desempenho Baixo
+418,Female,2.8,69.9,5.6,High School,Yes,Yes,No,80.8,84.9,B,Desempenho Alto
+419,Female,2.8,67.0,6.7,Masters,Yes,No,No,65.6,79.2,C,Desempenho Baixo
+420,Female,3.0,69.2,4.7,Bachelors,No,No,No,78.4,72.8,C,Desempenho Baixo
+421,Female,3.8,87.7,6.7,Bachelors,Yes,Yes,Yes,54.0,69.9,D,Desempenho Baixo
+422,Female,2.8,90.1,5.8,Bachelors,No,Yes,No,84.1,89.6,B,Desempenho Alto
+423,Female,5.4,69.2,7.9,High School,Yes,No,Yes,52.4,77.3,C,Desempenho Baixo
+424,Male,2.2,94.0,6.1,Masters,No,No,No,62.0,64.6,D,Desempenho Baixo
+425,Female,3.2,80.2,6.7,Bachelors,Yes,No,Yes,58.0,81.8,B,Desempenho Baixo
+426,Male,2.8,86.5,6.0,High School,Yes,Yes,No,48.9,86.2,B,Desempenho Alto
+427,Male,5.7,100.0,8.9,Bachelors,Yes,Yes,Yes,71.1,100.0,A,Desempenho Alto
+428,Female,3.8,94.0,6.4,Não informado,Yes,Yes,No,91.7,100.0,A,Desempenho Alto
+429,Male,5.0,82.3,9.0,Bachelors,Yes,Yes,No,100.0,100.0,A,Desempenho Alto
+430,Female,1.3,76.1,7.8,Não informado,Yes,Yes,No,71.2,72.0,C,Desempenho Baixo
+431,Male,3.9,63.5,7.4,High School,Yes,No,No,83.4,81.2,B,Desempenho Baixo
+432,Female,4.8,77.8,7.2,High School,Yes,Yes,No,72.8,100.0,A,Desempenho Alto
+433,Male,3.6,82.9,7.3,High School,Yes,No,Yes,76.0,79.7,C,Desempenho Baixo
+434,Female,5.1,75.1,4.5,Bachelors,Yes,Yes,No,65.9,89.4,B,Desempenho Alto
+435,Female,2.7,83.7,6.5,High School,Yes,No,No,72.3,77.8,C,Desempenho Baixo
+436,Female,5.6,85.8,7.8,High School,Yes,Yes,Yes,76.4,93.4,A,Desempenho Alto
+437,Female,6.9,82.8,6.7,Não informado,Yes,Yes,Yes,63.1,100.0,A,Desempenho Alto
+438,Female,3.0,78.5,5.1,Masters,Yes,Yes,No,69.1,76.5,C,Desempenho Baixo
+439,Male,2.8,86.7,6.7,Masters,Yes,No,No,69.3,79.3,C,Desempenho Baixo
+440,Male,5.7,89.4,8.8,High School,No,No,No,79.9,100.0,A,Desempenho Alto
+441,Male,5.9,74.1,8.3,High School,Yes,Yes,No,57.2,98.9,A,Desempenho Alto
+442,Female,2.7,99.1,6.7,High School,Yes,Yes,Yes,69.4,87.5,B,Desempenho Alto
+443,Male,2.9,84.0,7.9,Masters,Yes,No,Yes,92.9,85.2,B,Desempenho Alto
+444,Female,3.1,85.2,6.4,Não informado,Yes,Yes,No,84.0,86.0,B,Desempenho Alto
+445,Female,1.5,92.1,4.8,Bachelors,Yes,Yes,Yes,86.2,80.7,B,Desempenho Baixo
+446,Male,2.1,87.3,5.7,High School,Yes,No,No,70.3,79.9,C,Desempenho Baixo
+447,Male,2.0,94.5,8.7,Bachelors,Yes,No,No,73.9,79.1,C,Desempenho Baixo
+448,Female,2.3,87.9,6.5,High School,Yes,Yes,Yes,82.0,87.1,B,Desempenho Alto
+449,Male,3.4,78.9,6.5,Bachelors,Yes,Yes,No,88.7,90.7,A,Desempenho Alto
+450,Female,3.9,88.6,6.4,Bachelors,Yes,No,Yes,46.6,64.6,D,Desempenho Baixo
+451,Female,5.8,73.6,9.1,Masters,No,Yes,No,54.2,77.9,C,Desempenho Baixo
+452,Female,2.0,86.1,8.8,High School,Yes,Yes,Yes,85.7,82.0,B,Desempenho Baixo
+453,Female,5.0,84.7,9.5,High School,Yes,No,No,66.7,92.8,A,Desempenho Alto
+454,Female,3.2,82.9,6.6,Não informado,No,No,No,61.9,85.4,B,Desempenho Alto
+455,Male,3.4,83.7,7.2,High School,Yes,Yes,No,55.0,80.7,B,Desempenho Baixo
+456,Male,4.5,66.2,5.0,High School,Yes,No,No,63.3,72.7,C,Desempenho Baixo
+457,Female,1.8,79.5,8.6,High School,Yes,No,Yes,53.2,68.8,D,Desempenho Baixo
+458,Female,4.1,85.9,5.4,High School,No,Yes,No,95.1,89.9,B,Desempenho Alto
+459,Male,3.7,86.6,7.1,Bachelors,No,No,No,69.7,83.3,B,Desempenho Baixo
+460,Male,4.2,74.7,5.5,Masters,Yes,Yes,No,69.3,86.8,B,Desempenho Alto
+461,Female,3.9,97.7,6.1,High School,Yes,Yes,Yes,77.1,98.2,A,Desempenho Alto
+462,Male,7.2,76.3,5.8,Bachelors,Yes,No,No,81.5,100.0,A,Desempenho Alto
+463,Female,2.5,94.7,6.1,Masters,Yes,Yes,Yes,81.4,95.1,A,Desempenho Alto
+464,Male,2.7,89.3,6.2,Bachelors,Yes,Yes,No,82.9,93.5,A,Desempenho Alto
+465,Female,2.6,78.5,6.1,PhD,No,Yes,Yes,62.4,63.2,D,Desempenho Baixo
+466,Male,2.7,100.0,7.8,PhD,Yes,Yes,No,66.4,100.0,A,Desempenho Alto
+467,Female,2.5,73.1,5.5,High School,Yes,No,Yes,79.2,77.1,C,Desempenho Baixo
+468,Male,5.3,94.2,7.1,Masters,Yes,No,No,63.7,88.8,B,Desempenho Alto
+469,Male,5.6,95.0,8.3,Bachelors,Yes,No,No,69.9,100.0,A,Desempenho Alto
+470,Female,2.6,78.3,6.2,Não informado,Yes,Yes,Yes,74.8,89.9,B,Desempenho Alto
+471,Male,2.3,98.9,5.9,Bachelors,Yes,Yes,No,79.4,87.6,B,Desempenho Alto
+472,Female,4.2,82.5,6.5,Não informado,No,Yes,Yes,48.7,68.0,D,Desempenho Baixo
+473,Male,2.7,87.9,8.2,Masters,No,Yes,No,78.6,82.2,B,Desempenho Baixo
+474,Female,4.4,87.6,7.0,High School,Yes,Yes,No,67.2,94.0,A,Desempenho Alto
+475,Male,3.8,83.7,6.2,Bachelors,No,No,No,78.5,90.9,A,Desempenho Alto
+476,Female,1.2,93.1,7.4,Não informado,Yes,No,No,79.3,85.0,B,Desempenho Alto
+477,Male,5.8,92.9,5.5,PhD,Yes,No,Yes,89.3,100.0,A,Desempenho Alto
+478,Female,6.2,67.5,7.6,High School,Yes,Yes,No,86.2,100.0,A,Desempenho Alto
+479,Male,2.6,98.0,7.3,Masters,Yes,No,Yes,86.2,87.4,B,Desempenho Alto
+480,Female,2.9,68.4,6.4,High School,No,Yes,No,87.3,84.8,B,Desempenho Alto
+481,Female,3.9,95.3,5.8,High School,Yes,Yes,No,73.5,89.5,B,Desempenho Alto
+482,Female,4.0,96.3,5.7,Bachelors,Yes,No,No,70.4,92.3,A,Desempenho Alto
+483,Male,4.5,74.1,7.4,High School,Yes,No,Yes,80.5,86.6,B,Desempenho Alto
+484,Female,6.5,80.9,8.3,Masters,Yes,Yes,No,78.8,100.0,A,Desempenho Alto
+485,Male,3.2,73.9,6.0,High School,Yes,Yes,No,66.3,75.7,C,Desempenho Baixo
+486,Female,2.3,82.9,7.4,Masters,Yes,Yes,Yes,74.9,87.3,B,Desempenho Alto
+487,Male,1.4,81.9,4.3,High School,Yes,No,No,69.6,66.6,D,Desempenho Baixo
+488,Female,2.4,92.8,6.1,High School,Yes,Yes,No,59.8,74.1,C,Desempenho Baixo
+489,Male,3.5,98.1,6.8,High School,Yes,No,No,85.5,100.0,A,Desempenho Alto
+490,Male,6.2,99.0,5.7,High School,Yes,Yes,No,70.7,100.0,A,Desempenho Alto
+491,Female,2.7,79.4,5.7,High School,Yes,Yes,No,94.6,74.3,C,Desempenho Baixo
+492,Male,3.8,82.9,6.0,High School,Yes,Yes,Yes,50.5,71.1,C,Desempenho Baixo
+493,Male,3.5,68.2,7.2,Bachelors,Yes,Yes,No,63.3,66.7,D,Desempenho Baixo
+494,Female,5.3,76.9,6.6,High School,Yes,Yes,Yes,70.4,82.1,B,Desempenho Baixo
+495,Male,7.3,94.6,4.1,Bachelors,Yes,No,No,83.6,88.5,B,Desempenho Alto
+496,Male,2.7,100.0,4.3,Bachelors,No,No,No,74.8,79.4,C,Desempenho Baixo
+497,Male,2.8,72.7,6.1,PhD,Yes,No,No,73.7,71.0,C,Desempenho Baixo
+498,Female,5.1,79.1,7.3,Não informado,Yes,No,No,56.5,85.4,B,Desempenho Alto
+499,Male,4.5,84.7,3.5,Bachelors,No,No,Yes,56.1,61.8,D,Desempenho Baixo
+500,Female,6.3,87.8,6.2,High School,Yes,No,No,73.9,99.6,A,Desempenho Alto
+501,Male,4.4,76.9,6.2,High School,Yes,No,No,53.6,76.1,C,Desempenho Baixo
+502,Male,3.0,89.2,8.5,Não informado,Yes,Yes,Yes,63.6,90.4,A,Desempenho Alto
+503,Male,4.4,80.3,6.3,High School,No,Yes,No,76.0,93.3,A,Desempenho Alto
+504,Female,5.2,84.9,7.3,High School,No,Yes,No,58.2,88.9,B,Desempenho Alto
+505,Male,4.7,90.5,7.0,High School,Yes,Yes,No,89.3,99.0,A,Desempenho Alto
+506,Male,4.3,85.1,4.2,High School,Yes,Yes,Yes,84.7,100.0,A,Desempenho Alto
+507,Female,5.1,80.6,7.7,High School,Yes,No,No,51.1,74.5,C,Desempenho Baixo
+508,Male,5.3,83.9,7.1,Masters,No,Yes,Yes,58.8,72.8,C,Desempenho Baixo
+509,Female,5.6,84.1,7.4,High School,No,Yes,Yes,42.6,76.1,C,Desempenho Baixo
+510,Female,4.5,81.3,10.0,Bachelors,Yes,Yes,Yes,60.6,99.5,A,Desempenho Alto
+511,Male,3.2,82.4,4.3,High School,Yes,Yes,Yes,79.2,79.9,C,Desempenho Baixo
+512,Female,3.7,100.0,8.9,High School,Yes,Yes,Yes,65.0,88.2,B,Desempenho Alto
+513,Male,5.3,90.6,6.5,Não informado,Yes,Yes,No,75.5,88.9,B,Desempenho Alto
+514,Female,2.3,82.0,7.1,High School,Yes,Yes,No,51.7,77.9,C,Desempenho Baixo
+515,Female,4.1,92.0,6.7,Masters,Yes,Yes,Yes,79.6,97.2,A,Desempenho Alto
+516,Male,2.9,81.7,6.3,Bachelors,Yes,No,Yes,63.3,79.3,C,Desempenho Baixo
+517,Female,3.5,96.7,6.1,High School,Yes,No,No,70.1,84.2,B,Desempenho Alto
+518,Female,5.4,88.7,7.2,Não informado,No,Yes,No,68.9,86.3,B,Desempenho Alto
+519,Female,3.8,83.9,5.0,High School,Yes,Yes,Yes,54.7,67.6,D,Desempenho Baixo
+520,Female,3.6,89.5,7.7,PhD,Yes,Yes,Yes,56.2,80.7,B,Desempenho Baixo
+521,Female,1.5,69.3,6.3,High School,Yes,No,Yes,81.6,64.7,D,Desempenho Baixo
+522,Male,4.6,73.7,5.4,PhD,No,Yes,Yes,74.8,71.8,C,Desempenho Baixo
+523,Female,4.5,73.1,6.3,High School,Yes,Yes,Yes,82.6,84.9,B,Desempenho Alto
+524,Male,6.7,86.4,8.3,Bachelors,Yes,No,No,73.9,100.0,A,Desempenho Alto
+525,Female,3.0,100.0,6.2,Masters,Yes,Yes,Yes,71.7,82.4,B,Desempenho Baixo
+526,Male,3.8,100.0,7.2,Não informado,Yes,Yes,No,49.3,87.3,B,Desempenho Alto
+527,Male,3.9,91.4,5.9,Não informado,Yes,Yes,Yes,66.8,84.8,B,Desempenho Alto
+528,Female,5.9,90.0,7.7,Masters,Yes,No,No,69.7,96.4,A,Desempenho Alto
+529,Female,3.4,67.0,7.6,PhD,No,No,No,93.4,84.3,B,Desempenho Alto
+530,Female,3.9,79.6,9.0,High School,Yes,No,No,78.2,84.5,B,Desempenho Alto
+531,Male,4.4,77.1,6.6,High School,Yes,Yes,No,88.4,94.7,A,Desempenho Alto
+532,Female,3.8,78.8,7.6,High School,Yes,Yes,No,77.2,89.6,B,Desempenho Alto
+533,Male,2.8,83.3,6.9,Bachelors,Yes,No,No,61.5,68.6,D,Desempenho Baixo
+534,Male,3.8,80.3,8.4,Bachelors,Yes,No,No,71.4,92.8,A,Desempenho Alto
+535,Male,5.1,65.2,5.9,Bachelors,Yes,Yes,No,72.8,80.7,B,Desempenho Baixo
+536,Female,2.0,92.5,7.7,High School,Yes,No,No,58.7,77.6,C,Desempenho Baixo
+537,Female,3.7,74.3,6.6,Masters,Yes,Yes,No,65.4,87.7,B,Desempenho Alto
+538,Male,2.4,87.4,6.7,High School,Yes,Yes,No,67.5,86.0,B,Desempenho Alto
+539,Male,5.3,100.0,6.9,High School,Yes,No,No,89.3,100.0,A,Desempenho Alto
+540,Female,1.2,75.8,7.1,Bachelors,Yes,Yes,Yes,45.0,57.3,F,Desempenho Baixo
+541,Male,2.7,59.7,6.7,Masters,No,No,Yes,84.5,75.6,C,Desempenho Baixo
+542,Female,4.1,82.1,7.1,Masters,Yes,Yes,No,58.8,87.3,B,Desempenho Alto
+543,Male,5.8,96.0,8.7,Bachelors,Yes,Yes,Yes,53.5,88.8,B,Desempenho Alto
+544,Female,3.4,100.0,8.0,High School,Yes,No,No,84.2,91.8,A,Desempenho Alto
+545,Male,2.7,72.7,7.8,Bachelors,Yes,No,Yes,78.8,66.0,D,Desempenho Baixo
+546,Female,6.3,90.0,6.3,High School,Yes,Yes,No,85.1,100.0,A,Desempenho Alto
+547,Male,1.3,80.3,5.7,Bachelors,No,Yes,No,79.6,71.1,C,Desempenho Baixo
+548,Female,0.5,83.9,7.9,Bachelors,Yes,No,No,94.7,88.8,B,Desempenho Alto
+549,Female,4.2,100.0,7.9,High School,Yes,Yes,No,76.7,100.0,A,Desempenho Alto
+550,Male,2.7,70.0,8.6,High School,Yes,No,No,68.1,85.2,B,Desempenho Alto
+551,Male,2.0,87.5,6.1,Não informado,Yes,No,No,74.1,75.4,C,Desempenho Baixo
+552,Female,4.6,89.7,6.5,Não informado,Yes,Yes,No,84.9,100.0,A,Desempenho Alto
+553,Male,3.9,95.9,4.8,Bachelors,Yes,Yes,Yes,60.6,78.9,C,Desempenho Baixo
+554,Female,2.7,86.0,6.3,High School,Yes,Yes,No,62.2,83.4,B,Desempenho Baixo
+555,Male,1.6,88.1,8.0,High School,No,No,No,66.3,63.4,D,Desempenho Baixo
+556,Female,4.8,81.1,6.2,Bachelors,Yes,Yes,No,44.7,80.7,B,Desempenho Baixo
+557,Female,4.5,87.7,7.6,Não informado,Yes,Yes,No,71.7,80.8,B,Desempenho Baixo
+558,Female,3.4,81.6,6.6,High School,Yes,Yes,No,47.4,73.1,C,Desempenho Baixo
+559,Female,6.3,91.2,7.2,Masters,Yes,No,Yes,70.6,99.8,A,Desempenho Alto
+560,Female,1.9,81.3,5.4,High School,Yes,Yes,Yes,80.4,73.5,C,Desempenho Baixo
+561,Female,1.2,88.8,6.9,Não informado,Yes,Yes,No,64.3,68.2,D,Desempenho Baixo
+562,Male,2.5,84.7,3.2,Bachelors,No,No,No,90.1,83.9,B,Desempenho Alto
+563,Male,3.4,96.3,6.6,Masters,No,No,No,52.5,75.3,C,Desempenho Baixo
+564,Male,3.9,84.5,4.8,High School,No,No,Yes,84.3,78.7,C,Desempenho Baixo
+565,Female,3.1,67.3,8.2,Bachelors,Yes,Yes,No,78.1,82.8,B,Desempenho Baixo
+566,Female,4.0,97.6,7.7,High School,Yes,Yes,No,49.4,100.0,A,Desempenho Alto
+567,Female,1.6,75.9,7.4,High School,Yes,No,No,100.0,92.6,A,Desempenho Alto
+568,Female,5.7,78.5,8.6,Não informado,Yes,Yes,Yes,69.2,99.1,A,Desempenho Alto
+569,Male,3.4,79.0,5.7,Não informado,Yes,No,Yes,59.5,76.2,C,Desempenho Baixo
+570,Male,5.2,98.7,8.9,PhD,Yes,No,Yes,53.1,90.9,A,Desempenho Alto
+571,Female,4.0,63.6,7.9,Bachelors,Yes,Yes,Yes,67.4,63.3,D,Desempenho Baixo
+572,Male,4.2,100.0,6.5,Masters,Yes,No,Yes,68.5,85.0,B,Desempenho Alto
+573,Male,4.4,95.6,8.2,High School,Yes,No,Yes,71.2,88.7,B,Desempenho Alto
+574,Female,4.2,87.2,5.5,High School,Yes,Yes,No,66.4,75.3,C,Desempenho Baixo
+575,Male,4.5,84.5,5.8,High School,Yes,Yes,No,77.6,84.9,B,Desempenho Alto
+576,Female,5.5,87.9,6.1,Bachelors,Yes,Yes,No,65.3,81.1,B,Desempenho Baixo
+577,Male,3.8,90.2,6.2,Bachelors,Yes,Yes,Yes,46.8,75.6,C,Desempenho Baixo
+578,Female,4.6,91.5,5.5,High School,Yes,Yes,No,68.2,95.5,A,Desempenho Alto
+579,Female,3.4,90.6,8.3,Bachelors,Yes,No,No,41.6,83.3,B,Desempenho Baixo
+580,Female,5.7,85.9,6.5,Masters,Yes,No,Yes,74.2,95.7,A,Desempenho Alto
+581,Female,2.5,83.0,7.2,Bachelors,Yes,Yes,No,58.2,70.4,C,Desempenho Baixo
+582,Male,6.2,83.5,6.1,High School,Yes,Yes,Yes,72.0,82.7,B,Desempenho Baixo
+583,Female,3.4,83.1,4.6,High School,Yes,No,No,85.8,76.7,C,Desempenho Baixo
+584,Female,1.4,96.3,7.1,High School,Yes,Yes,No,58.6,68.4,D,Desempenho Baixo
+585,Female,3.7,90.9,4.5,High School,Yes,No,No,82.7,84.6,B,Desempenho Alto
+586,Male,2.5,55.6,6.7,Bachelors,Yes,Yes,No,64.8,67.7,D,Desempenho Baixo
+587,Female,4.8,91.6,5.2,Bachelors,No,Yes,No,91.0,89.2,B,Desempenho Alto
+588,Male,2.5,86.9,9.2,Masters,Yes,Yes,No,65.6,85.0,B,Desempenho Alto
+589,Female,2.8,84.8,7.9,Bachelors,Yes,No,No,59.9,77.3,C,Desempenho Baixo
+590,Male,0.7,81.1,6.9,Masters,Yes,Yes,Yes,78.2,72.2,C,Desempenho Baixo
+591,Male,2.8,96.2,8.3,High School,Yes,No,Yes,64.8,89.0,B,Desempenho Alto
+592,Female,0.5,94.5,5.8,Bachelors,Yes,Yes,No,59.9,63.2,D,Desempenho Baixo
+593,Male,1.1,77.3,7.5,Masters,Yes,Yes,No,64.3,73.2,C,Desempenho Baixo
+594,Female,4.6,89.1,7.0,High School,No,Yes,No,69.5,87.0,B,Desempenho Alto
+595,Female,4.7,75.3,7.1,High School,Yes,No,Yes,86.1,88.5,B,Desempenho Alto
+596,Female,4.1,71.2,8.3,PhD,Yes,No,No,46.8,80.4,B,Desempenho Baixo
+597,Male,2.0,78.7,7.7,High School,Yes,Yes,Yes,70.3,80.2,B,Desempenho Baixo
+598,Male,3.4,93.6,7.1,Masters,No,Yes,No,77.5,80.9,B,Desempenho Baixo
+599,Female,3.5,94.5,4.8,High School,Yes,Yes,No,72.3,86.4,B,Desempenho Alto
+600,Female,1.8,90.1,5.6,Masters,Yes,Yes,No,85.7,86.3,B,Desempenho Alto
+601,Male,5.8,92.3,6.7,High School,Yes,Yes,Yes,69.1,93.4,A,Desempenho Alto
+602,Female,4.8,90.2,6.9,High School,Yes,No,No,67.8,95.1,A,Desempenho Alto
+603,Female,3.2,78.6,5.4,Bachelors,Yes,No,No,77.1,83.9,B,Desempenho Alto
+604,Female,3.5,89.3,9.7,High School,Yes,Yes,No,71.2,100.0,A,Desempenho Alto
+605,Male,3.8,93.0,8.6,Bachelors,Yes,Yes,No,65.3,80.9,B,Desempenho Baixo
+606,Male,0.5,92.5,7.5,High School,Yes,No,No,76.2,76.4,C,Desempenho Baixo
+607,Male,3.1,96.9,6.9,High School,No,No,No,62.2,73.6,C,Desempenho Baixo
+608,Female,2.5,92.1,6.5,High School,Yes,Yes,No,62.7,84.0,B,Desempenho Alto
+609,Female,2.0,88.5,5.7,High School,No,Yes,Yes,63.7,58.6,F,Desempenho Baixo
+610,Female,3.1,95.7,6.9,Não informado,Yes,Yes,No,86.2,96.3,A,Desempenho Alto
+611,Male,6.2,84.7,7.1,High School,Yes,Yes,No,31.3,78.8,C,Desempenho Baixo
+612,Female,4.5,76.2,5.3,Bachelors,Yes,Yes,Yes,74.7,79.8,C,Desempenho Baixo
+613,Female,2.6,83.4,7.2,High School,Yes,Yes,Yes,70.4,70.0,C,Desempenho Baixo
+614,Female,4.4,77.6,6.6,High School,Yes,No,No,49.8,75.0,C,Desempenho Baixo
+615,Female,5.6,78.2,4.5,Não informado,Yes,Yes,Yes,73.7,95.0,A,Desempenho Alto
+616,Male,4.9,83.6,5.8,High School,Yes,Yes,No,75.7,92.4,A,Desempenho Alto
+617,Male,3.6,77.1,6.3,Não informado,Yes,Yes,Yes,77.1,86.4,B,Desempenho Alto
+618,Female,2.5,81.9,9.1,High School,Yes,No,No,38.2,79.1,C,Desempenho Baixo
+619,Male,4.5,66.1,7.5,Masters,Yes,No,No,86.4,91.5,A,Desempenho Alto
+620,Male,4.1,87.1,5.2,Bachelors,Yes,Yes,No,61.1,80.3,B,Desempenho Baixo
+621,Female,4.8,85.0,7.4,PhD,Yes,Yes,No,78.2,98.3,A,Desempenho Alto
+622,Female,4.5,76.8,4.9,Bachelors,No,No,No,78.9,79.3,C,Desempenho Baixo
+623,Male,5.1,91.6,8.1,Bachelors,Yes,Yes,No,59.5,89.5,B,Desempenho Alto
+624,Female,2.7,94.4,6.2,High School,Yes,Yes,Yes,77.9,75.7,C,Desempenho Baixo
+625,Male,5.5,68.9,6.7,High School,Yes,Yes,Yes,65.4,89.6,B,Desempenho Alto
+626,Female,3.8,77.4,8.4,Não informado,Yes,Yes,Yes,45.1,71.0,C,Desempenho Baixo
+627,Male,6.6,77.3,5.3,High School,No,Yes,No,84.0,96.8,A,Desempenho Alto
+628,Female,2.5,75.6,5.1,Bachelors,Yes,No,Yes,60.7,61.9,D,Desempenho Baixo
+629,Male,6.1,93.3,6.1,Masters,Yes,No,Yes,59.7,93.9,A,Desempenho Alto
+630,Male,3.8,83.1,8.0,High School,Yes,Yes,No,65.2,81.3,B,Desempenho Baixo
+631,Male,2.5,82.4,5.0,Não informado,Yes,No,No,73.3,77.6,C,Desempenho Baixo
+632,Female,2.8,65.0,3.4,Masters,No,Yes,No,69.3,71.4,C,Desempenho Baixo
+633,Male,3.0,91.4,6.3,Bachelors,Yes,Yes,Yes,76.6,89.4,B,Desempenho Alto
+634,Male,4.1,72.6,7.5,PhD,Yes,No,Yes,53.9,74.3,C,Desempenho Baixo
+635,Female,4.3,85.6,8.2,High School,Yes,No,No,61.1,76.0,C,Desempenho Baixo
+636,Female,2.6,87.8,6.2,High School,Yes,Yes,Yes,68.6,96.3,A,Desempenho Alto
+637,Male,3.5,98.6,6.3,Bachelors,Yes,Yes,No,92.8,100.0,A,Desempenho Alto
+638,Male,6.7,71.9,8.2,High School,Yes,No,No,68.6,99.9,A,Desempenho Alto
+639,Female,6.1,54.8,4.6,Masters,Yes,No,No,83.0,83.8,B,Desempenho Alto
+640,Female,4.2,86.8,6.3,Não informado,No,No,Yes,70.5,79.4,C,Desempenho Baixo
+641,Female,3.6,100.0,7.0,Bachelors,Yes,Yes,No,64.2,86.0,B,Desempenho Alto
+642,Female,3.7,97.4,7.3,High School,Yes,Yes,No,67.0,97.9,A,Desempenho Alto
+643,Female,4.4,87.1,6.2,Não informado,Yes,Yes,No,68.0,90.5,A,Desempenho Alto
+644,Male,2.0,80.1,6.8,Bachelors,No,Yes,No,77.2,70.4,C,Desempenho Baixo
+645,Female,3.1,93.1,3.8,Bachelors,Yes,No,Yes,86.5,82.9,B,Desempenho Baixo
+646,Male,1.0,75.3,6.0,Bachelors,Yes,Yes,Yes,74.3,75.5,C,Desempenho Baixo
+647,Male,4.1,89.8,7.3,Não informado,Yes,Yes,No,84.2,100.0,A,Desempenho Alto
+648,Male,4.5,90.1,5.6,Bachelors,Yes,No,No,58.4,94.0,A,Desempenho Alto
+649,Female,2.8,95.6,6.9,Masters,Yes,Yes,No,65.0,88.9,B,Desempenho Alto
+650,Male,5.9,100.0,7.3,Masters,Yes,Yes,No,61.3,97.3,A,Desempenho Alto
+651,Male,1.7,88.9,6.4,High School,Yes,No,No,73.8,59.5,F,Desempenho Baixo
+652,Female,1.3,79.9,7.0,Bachelors,Yes,No,No,65.7,73.3,C,Desempenho Baixo
+653,Male,3.8,84.7,5.6,Masters,Yes,No,No,78.8,88.0,B,Desempenho Alto
+654,Male,5.1,67.3,6.6,Bachelors,No,Yes,Yes,58.8,74.8,C,Desempenho Baixo
+655,Female,6.0,78.1,7.5,Masters,No,No,No,70.5,89.9,B,Desempenho Alto
+656,Male,2.8,80.9,7.0,Não informado,Yes,No,Yes,78.2,72.6,C,Desempenho Baixo
+657,Male,5.1,79.8,6.1,Bachelors,Yes,Yes,No,45.2,83.6,B,Desempenho Baixo
+658,Male,3.4,86.5,7.1,Masters,Yes,Yes,No,95.5,100.0,A,Desempenho Alto
+659,Female,3.2,76.8,7.7,Masters,Yes,No,No,66.6,84.3,B,Desempenho Alto
+660,Female,4.8,96.2,4.3,Masters,Yes,Yes,Yes,45.7,85.4,B,Desempenho Alto
+661,Female,4.5,85.0,8.2,Bachelors,Yes,No,No,71.9,95.2,A,Desempenho Alto
+662,Male,1.1,84.9,6.4,High School,Yes,Yes,Yes,70.4,69.0,D,Desempenho Baixo
+663,Male,5.7,81.7,7.3,Bachelors,Yes,Yes,No,69.0,94.2,A,Desempenho Alto
+664,Female,5.6,86.6,8.2,Masters,Yes,Yes,Yes,81.9,99.7,A,Desempenho Alto
+665,Male,2.6,93.3,5.2,Bachelors,Yes,No,No,79.0,85.8,B,Desempenho Alto
+666,Male,4.1,76.3,5.9,Masters,Yes,Yes,No,73.6,91.7,A,Desempenho Alto
+667,Female,4.2,78.4,6.5,Bachelors,Yes,Yes,No,75.4,92.2,A,Desempenho Alto
+668,Female,3.9,82.0,5.9,Bachelors,Yes,No,No,68.7,96.3,A,Desempenho Alto
+669,Male,2.7,71.5,8.9,High School,Yes,No,Yes,91.3,97.6,A,Desempenho Alto
+670,Male,2.5,76.8,5.8,Masters,Yes,No,Yes,52.2,66.4,D,Desempenho Baixo
+671,Male,3.5,80.2,6.1,Bachelors,Yes,Yes,No,71.7,60.8,D,Desempenho Baixo
+672,Female,5.3,93.7,7.0,High School,No,Yes,No,70.8,99.8,A,Desempenho Alto
+673,Female,4.3,87.6,5.4,High School,Yes,No,Yes,79.8,85.2,B,Desempenho Alto
+674,Female,2.9,86.9,6.3,Masters,Yes,No,No,59.9,73.2,C,Desempenho Baixo
+675,Female,4.7,93.5,7.2,Bachelors,Yes,Yes,No,49.1,83.8,B,Desempenho Alto
+676,Male,0.5,83.6,6.4,High School,No,Yes,Yes,71.9,61.3,D,Desempenho Baixo
+677,Female,5.2,88.9,6.7,Não informado,No,No,Yes,73.4,90.6,A,Desempenho Alto
+678,Female,0.9,84.0,6.2,Masters,Yes,Yes,Yes,87.9,67.7,D,Desempenho Baixo
+679,Female,3.0,87.7,5.0,Não informado,No,No,No,54.8,63.6,D,Desempenho Baixo
+680,Female,1.8,79.2,7.2,Bachelors,Yes,Yes,No,83.9,84.1,B,Desempenho Alto
+681,Female,1.6,60.6,8.9,Bachelors,Yes,Yes,No,98.4,86.2,B,Desempenho Alto
+682,Male,5.2,83.7,6.8,PhD,Yes,No,No,65.5,93.9,A,Desempenho Alto
+683,Male,2.8,99.2,7.1,Bachelors,Yes,Yes,Yes,54.5,73.9,C,Desempenho Baixo
+684,Female,4.0,94.3,7.6,Masters,No,Yes,No,65.1,79.3,C,Desempenho Baixo
+685,Male,3.4,94.7,5.3,High School,Yes,Yes,No,70.2,83.8,B,Desempenho Alto
+686,Female,4.2,97.4,8.8,Bachelors,No,Yes,Yes,76.8,91.7,A,Desempenho Alto
+687,Female,3.6,85.9,7.0,High School,Yes,No,No,62.9,91.7,A,Desempenho Alto
+688,Male,1.6,87.0,8.8,High School,Yes,No,No,88.7,74.4,C,Desempenho Baixo
+689,Male,5.0,78.8,5.9,High School,Yes,No,No,56.6,81.5,B,Desempenho Baixo
+690,Female,2.8,81.8,9.0,High School,Yes,Yes,No,49.1,67.7,D,Desempenho Baixo
+691,Female,1.2,91.2,7.7,Não informado,Yes,Yes,Yes,83.3,71.0,C,Desempenho Baixo
+692,Female,2.9,97.0,7.5,High School,Yes,Yes,Yes,42.7,79.9,C,Desempenho Baixo
+693,Male,5.8,83.6,7.1,Masters,No,No,No,67.6,92.2,A,Desempenho Alto
+694,Female,4.8,80.5,6.5,Masters,Yes,No,Yes,100.0,100.0,A,Desempenho Alto
+695,Female,3.0,85.0,8.2,Bachelors,Yes,No,No,69.9,89.6,B,Desempenho Alto
+696,Female,3.0,91.0,7.0,High School,Yes,Yes,No,56.6,77.5,C,Desempenho Baixo
+697,Male,3.0,70.6,4.4,Masters,Yes,Yes,No,69.3,72.6,C,Desempenho Baixo
+698,Female,6.6,62.0,5.5,Bachelors,No,Yes,No,69.4,97.9,A,Desempenho Alto
+699,Female,4.1,79.5,6.6,Masters,Yes,Yes,No,71.9,85.5,B,Desempenho Alto
+700,Male,4.1,72.8,7.2,Masters,Yes,Yes,No,77.9,92.1,A,Desempenho Alto
+701,Female,5.0,79.9,6.7,Não informado,Yes,No,No,57.5,84.5,B,Desempenho Alto
+702,Female,3.9,83.5,8.3,Bachelors,Yes,Yes,Yes,90.3,82.8,B,Desempenho Baixo
+703,Male,3.1,80.5,4.5,High School,Yes,Yes,Yes,72.9,65.4,D,Desempenho Baixo
+704,Female,3.2,99.5,7.0,Bachelors,Yes,Yes,No,78.7,89.6,B,Desempenho Alto
+705,Male,3.4,88.3,4.6,High School,Yes,No,Yes,62.5,83.1,B,Desempenho Baixo
+706,Male,3.4,88.0,7.7,PhD,Yes,No,Yes,85.4,94.2,A,Desempenho Alto
+707,Female,4.6,91.2,6.7,High School,Yes,No,Yes,66.9,92.9,A,Desempenho Alto
+708,Female,3.6,73.6,7.3,High School,Yes,No,No,73.3,77.1,C,Desempenho Baixo
+709,Female,4.6,95.4,5.8,Masters,Yes,Yes,No,58.8,98.3,A,Desempenho Alto
+710,Female,3.4,84.2,8.3,Bachelors,Yes,No,Yes,58.0,72.1,C,Desempenho Baixo
+711,Male,3.6,91.7,8.1,Bachelors,Yes,Yes,No,78.3,94.6,A,Desempenho Alto
+712,Female,0.5,74.3,7.5,Bachelors,Yes,Yes,No,64.7,67.1,D,Desempenho Baixo
+713,Male,4.9,69.5,6.6,PhD,No,No,Yes,59.8,72.2,C,Desempenho Baixo
+714,Female,4.0,93.2,7.5,High School,Yes,No,No,62.3,95.6,A,Desempenho Alto
+715,Female,5.0,88.8,6.0,PhD,Yes,Yes,No,78.4,91.9,A,Desempenho Alto
+716,Female,0.5,76.0,7.8,High School,No,Yes,No,62.5,54.1,F,Desempenho Baixo
+717,Male,6.6,76.3,8.8,Masters,Yes,Yes,No,68.6,98.5,A,Desempenho Alto
+718,Female,3.3,96.3,8.1,Masters,Yes,Yes,Yes,70.2,85.0,B,Desempenho Alto
+719,Female,5.2,73.1,5.9,High School,Yes,Yes,No,47.0,99.1,A,Desempenho Alto
+720,Female,1.9,100.0,7.2,Bachelors,Yes,Yes,Yes,52.3,78.2,C,Desempenho Baixo
+721,Female,4.4,76.0,5.2,High School,Yes,Yes,No,74.0,83.8,B,Desempenho Alto
+722,Male,1.9,91.4,7.5,Masters,Yes,No,No,61.2,70.7,C,Desempenho Baixo
+723,Female,2.6,81.7,7.3,Bachelors,No,Yes,No,82.7,69.9,D,Desempenho Baixo
+724,Male,6.4,91.0,4.6,Bachelors,Yes,Yes,Yes,81.6,93.7,A,Desempenho Alto
+725,Male,3.2,79.6,5.4,High School,Yes,Yes,No,78.6,84.9,B,Desempenho Alto
+726,Male,3.8,83.4,6.5,High School,Yes,No,No,91.8,100.0,A,Desempenho Alto
+727,Male,4.8,85.4,6.4,High School,Yes,Yes,No,69.0,97.5,A,Desempenho Alto
+728,Male,4.2,75.0,5.3,High School,Yes,Yes,No,77.8,88.0,B,Desempenho Alto
+729,Male,3.7,92.4,7.3,Bachelors,Yes,Yes,No,63.0,85.0,B,Desempenho Alto
+730,Female,4.0,79.9,7.1,PhD,Yes,No,No,99.4,98.9,A,Desempenho Alto
+731,Male,7.1,82.7,6.6,Masters,Yes,No,No,93.8,100.0,A,Desempenho Alto
+732,Male,3.4,75.1,5.9,Bachelors,No,No,No,70.1,85.0,B,Desempenho Alto
+733,Male,3.8,59.4,8.1,Não informado,No,No,No,74.6,74.3,C,Desempenho Baixo
+734,Female,5.1,83.1,8.8,Masters,Yes,No,No,86.3,99.6,A,Desempenho Alto
+735,Female,5.2,100.0,6.2,Não informado,Yes,No,Yes,68.2,79.8,C,Desempenho Baixo
+736,Male,5.3,92.8,6.1,Bachelors,Yes,Yes,No,62.1,91.3,A,Desempenho Alto
+737,Female,4.5,84.8,7.4,High School,No,Yes,No,80.5,95.0,A,Desempenho Alto
+738,Male,1.8,82.4,6.4,High School,Yes,No,Yes,70.9,66.6,D,Desempenho Baixo
+739,Male,6.0,85.2,6.6,Masters,Yes,Yes,No,72.2,93.1,A,Desempenho Alto
+740,Female,1.8,90.5,7.7,High School,Yes,Yes,No,60.0,81.8,B,Desempenho Baixo
+741,Male,4.0,73.2,4.5,High School,Yes,No,No,49.4,62.9,D,Desempenho Baixo
+742,Female,2.4,96.1,8.4,Bachelors,Yes,Yes,No,72.8,94.0,A,Desempenho Alto
+743,Female,3.4,92.2,6.9,Bachelors,Yes,No,Yes,80.9,85.0,B,Desempenho Alto
+744,Male,4.0,92.2,6.3,Bachelors,Yes,No,Yes,67.3,82.4,B,Desempenho Baixo
+745,Male,4.0,89.4,6.7,High School,Yes,Yes,No,87.2,89.5,B,Desempenho Alto
+746,Female,4.1,85.2,6.8,Bachelors,Yes,No,Yes,61.6,83.3,B,Desempenho Baixo
+747,Male,5.9,91.7,4.7,Bachelors,Yes,Yes,Yes,57.3,100.0,A,Desempenho Alto
+748,Male,4.2,90.9,8.6,Não informado,No,Yes,No,69.2,92.4,A,Desempenho Alto
+749,Male,3.1,81.5,6.8,Masters,Yes,Yes,No,69.0,77.0,C,Desempenho Baixo
+750,Female,4.9,79.3,7.3,Não informado,No,No,No,79.2,95.1,A,Desempenho Alto
+751,Female,5.3,86.0,7.9,Masters,Yes,No,No,60.7,88.8,B,Desempenho Alto
+752,Male,1.7,100.0,5.6,Bachelors,Yes,Yes,Yes,86.4,93.2,A,Desempenho Alto
+753,Female,4.4,72.6,7.4,High School,Yes,No,Yes,93.6,96.4,A,Desempenho Alto
+754,Female,4.6,70.3,6.5,Masters,Yes,Yes,No,69.5,67.2,D,Desempenho Baixo
+755,Female,3.1,86.6,7.8,Bachelors,Yes,No,No,85.0,84.6,B,Desempenho Alto
+756,Female,5.6,85.5,4.2,Bachelors,Yes,Yes,Yes,57.3,89.8,B,Desempenho Alto
+757,Female,3.3,86.7,6.7,Bachelors,Yes,No,No,82.9,90.3,A,Desempenho Alto
+758,Male,3.7,87.4,6.1,Bachelors,Yes,Yes,Yes,82.6,82.5,B,Desempenho Baixo
+759,Male,3.2,82.8,7.3,High School,Yes,Yes,No,80.4,84.5,B,Desempenho Alto
+760,Male,3.5,99.9,7.4,Bachelors,No,Yes,Yes,69.8,72.1,C,Desempenho Baixo
+761,Female,1.9,69.0,6.0,High School,Yes,No,Yes,34.5,53.2,F,Desempenho Baixo
+762,Female,1.3,76.7,5.9,Masters,No,Yes,Yes,62.3,74.0,C,Desempenho Baixo
+763,Male,5.9,84.0,6.7,High School,Yes,No,No,62.5,96.8,A,Desempenho Alto
+764,Female,2.2,68.6,5.7,High School,Yes,Yes,No,58.3,81.2,B,Desempenho Baixo
+765,Male,2.0,83.2,7.8,Bachelors,Yes,Yes,No,71.5,85.4,B,Desempenho Alto
+766,Male,0.5,100.0,6.4,Masters,Yes,Yes,No,65.0,81.1,B,Desempenho Baixo
+767,Male,2.5,85.2,3.3,Bachelors,Yes,No,No,60.1,83.9,B,Desempenho Alto
+768,Female,1.5,87.3,6.4,High School,Yes,Yes,Yes,57.3,71.2,C,Desempenho Baixo
+769,Female,6.0,72.4,5.6,Bachelors,Yes,No,No,61.4,85.5,B,Desempenho Alto
+770,Male,5.0,78.8,4.8,High School,Yes,No,No,83.5,98.4,A,Desempenho Alto
+771,Male,2.5,81.2,5.3,Não informado,Yes,No,No,62.1,82.6,B,Desempenho Baixo
+772,Male,6.9,81.8,6.9,Não informado,Yes,Yes,Yes,63.8,91.6,A,Desempenho Alto
+773,Male,5.0,97.8,8.4,Bachelors,Yes,No,No,64.5,91.3,A,Desempenho Alto
+774,Female,3.0,90.6,7.2,High School,Yes,No,Yes,74.1,84.3,B,Desempenho Alto
+775,Female,0.5,73.9,6.1,Masters,Yes,Yes,No,75.5,74.6,C,Desempenho Baixo
+776,Male,6.9,87.5,7.3,High School,Yes,No,Yes,33.5,88.6,B,Desempenho Alto
+777,Male,1.4,90.0,6.2,Bachelors,Yes,Yes,No,82.3,73.6,C,Desempenho Baixo
+778,Female,1.0,96.4,6.0,High School,Yes,Yes,No,87.2,95.8,A,Desempenho Alto
+779,Female,5.0,100.0,5.4,Não informado,Yes,Yes,No,57.4,87.1,B,Desempenho Alto
+780,Male,7.2,74.8,4.7,High School,Yes,Yes,No,58.3,89.9,B,Desempenho Alto
+781,Male,5.6,76.9,6.3,Bachelors,No,Yes,No,64.6,79.1,C,Desempenho Baixo
+782,Male,4.3,72.4,7.0,Masters,Yes,Yes,No,60.9,97.6,A,Desempenho Alto
+783,Female,4.4,82.7,6.7,Bachelors,Yes,No,No,72.7,90.3,A,Desempenho Alto
+784,Female,4.8,89.7,6.3,High School,Yes,Yes,No,46.6,78.1,C,Desempenho Baixo
+785,Female,4.6,94.9,5.7,Não informado,Yes,Yes,No,56.6,92.6,A,Desempenho Alto
+786,Male,3.9,84.2,7.5,Bachelors,Yes,Yes,Yes,88.5,97.0,A,Desempenho Alto
+787,Male,3.7,81.8,5.2,Bachelors,Yes,No,No,58.9,77.0,C,Desempenho Baixo
+788,Female,3.4,86.5,7.7,High School,Yes,No,No,84.9,96.8,A,Desempenho Alto
+789,Female,2.4,76.6,5.6,Bachelors,Yes,No,No,74.3,72.1,C,Desempenho Baixo
+790,Male,3.1,100.0,5.9,Bachelors,Yes,No,No,48.3,75.4,C,Desempenho Baixo
+791,Female,1.0,68.9,5.0,High School,Yes,Yes,No,77.6,57.6,F,Desempenho Baixo
+792,Female,3.4,86.8,6.2,High School,No,No,Yes,68.6,67.6,D,Desempenho Baixo
+793,Male,2.0,100.0,8.0,Masters,Yes,Yes,Yes,64.5,91.2,A,Desempenho Alto
+794,Female,1.8,85.1,7.4,High School,Yes,Yes,Yes,72.9,86.8,B,Desempenho Alto
+795,Male,3.8,83.1,8.0,High School,Yes,No,No,75.7,89.5,B,Desempenho Alto
+796,Male,5.6,81.4,7.4,Bachelors,Yes,Yes,No,78.5,100.0,A,Desempenho Alto
+797,Male,4.9,83.2,5.5,Masters,Yes,No,No,84.1,93.4,A,Desempenho Alto
+798,Male,1.1,98.7,6.4,High School,Yes,No,No,74.9,78.7,C,Desempenho Baixo
+799,Male,2.0,62.9,5.9,Bachelors,Yes,Yes,Yes,53.5,60.8,D,Desempenho Baixo
+800,Male,4.9,100.0,8.4,High School,Yes,Yes,No,64.3,96.1,A,Desempenho Alto
+801,Male,2.0,70.8,5.4,High School,Yes,Yes,No,100.0,83.0,B,Desempenho Baixo
+802,Female,3.2,82.3,7.9,High School,Yes,No,No,78.7,94.0,A,Desempenho Alto
+803,Male,4.3,80.7,7.9,Masters,Yes,No,No,98.4,100.0,A,Desempenho Alto
+804,Male,2.0,90.9,9.0,High School,Yes,Yes,No,86.7,94.6,A,Desempenho Alto
+805,Female,3.7,69.0,6.3,High School,Yes,Yes,No,72.9,87.7,B,Desempenho Alto
+806,Female,1.5,89.6,7.7,Bachelors,Yes,No,No,73.6,82.1,B,Desempenho Baixo
+807,Female,2.6,100.0,9.5,Masters,Yes,No,Yes,69.6,80.1,B,Desempenho Baixo
+808,Male,4.0,71.4,6.1,High School,No,Yes,Yes,49.1,57.8,F,Desempenho Baixo
+809,Female,1.1,86.9,5.0,Bachelors,Yes,Yes,No,70.2,74.3,C,Desempenho Baixo
+810,Male,4.2,78.4,4.5,High School,No,No,No,84.5,82.5,B,Desempenho Baixo
+811,Male,3.5,89.3,7.7,Bachelors,Yes,Yes,No,62.8,85.9,B,Desempenho Alto
+812,Male,4.3,85.2,4.5,Bachelors,Yes,Yes,No,74.9,88.4,B,Desempenho Alto
+813,Male,3.8,78.6,6.4,Bachelors,Yes,No,No,80.2,100.0,A,Desempenho Alto
+814,Female,5.5,89.9,7.3,High School,No,No,Yes,59.1,75.6,C,Desempenho Baixo
+815,Female,3.7,100.0,7.0,High School,Yes,Yes,No,64.6,78.0,C,Desempenho Baixo
+816,Male,2.9,83.1,7.3,High School,Yes,Yes,No,57.8,80.0,B,Desempenho Baixo
+817,Male,3.7,92.2,7.1,Bachelors,Yes,Yes,Yes,60.1,80.2,B,Desempenho Baixo
+818,Male,4.3,72.1,8.3,High School,Yes,Yes,No,54.5,82.2,B,Desempenho Baixo
+819,Female,3.6,75.4,5.7,Masters,Yes,No,No,59.2,79.6,C,Desempenho Baixo
+820,Male,3.6,89.7,6.0,Não informado,No,Yes,No,87.0,96.3,A,Desempenho Alto
+821,Male,2.4,99.8,5.9,Não informado,No,No,No,59.0,65.4,D,Desempenho Baixo
+822,Female,2.5,88.6,7.8,PhD,Yes,No,No,71.5,79.9,C,Desempenho Baixo
+823,Female,1.4,81.9,7.9,Bachelors,No,Yes,No,64.0,71.6,C,Desempenho Baixo
+824,Male,6.1,85.0,7.3,Masters,Yes,Yes,No,84.1,100.0,A,Desempenho Alto
+825,Female,1.6,72.5,8.2,High School,Yes,Yes,No,85.7,93.9,A,Desempenho Alto
+826,Female,2.5,91.0,5.4,Bachelors,Yes,No,Yes,80.4,87.5,B,Desempenho Alto
+827,Male,2.4,93.8,8.8,Bachelors,Yes,No,No,73.7,86.3,B,Desempenho Alto
+828,Female,4.8,80.5,8.6,Bachelors,No,Yes,Yes,67.2,77.6,C,Desempenho Baixo
+829,Male,3.1,80.3,7.7,Masters,Yes,No,Yes,55.7,70.2,C,Desempenho Baixo
+830,Female,5.4,87.7,8.9,High School,Yes,No,No,93.3,100.0,A,Desempenho Alto
+831,Male,2.5,80.6,4.8,High School,Yes,No,Yes,60.9,73.5,C,Desempenho Baixo
+832,Male,3.9,84.3,6.2,Não informado,Yes,Yes,No,78.0,91.2,A,Desempenho Alto
+833,Male,2.2,100.0,5.9,High School,Yes,Yes,Yes,82.7,78.1,C,Desempenho Baixo
+834,Female,6.7,82.5,7.7,Bachelors,No,No,No,63.3,89.0,B,Desempenho Alto
+835,Male,1.7,81.4,5.5,Não informado,Yes,Yes,Yes,82.5,82.0,B,Desempenho Baixo
+836,Female,4.0,78.5,7.7,Bachelors,Yes,Yes,Yes,79.2,89.5,B,Desempenho Alto
+837,Male,4.5,92.4,8.4,Bachelors,Yes,Yes,Yes,90.7,100.0,A,Desempenho Alto
+838,Male,4.1,83.2,7.6,High School,Yes,Yes,No,64.4,88.7,B,Desempenho Alto
+839,Female,3.2,78.5,7.1,High School,Yes,Yes,No,54.6,86.0,B,Desempenho Alto
+840,Male,3.3,98.2,5.6,PhD,Yes,No,Yes,63.9,82.9,B,Desempenho Baixo
+841,Male,3.6,99.2,5.8,Bachelors,Yes,Yes,No,72.5,88.6,B,Desempenho Alto
+842,Female,3.3,79.0,8.3,Bachelors,Yes,Yes,No,70.7,79.2,C,Desempenho Baixo
+843,Male,4.9,66.3,7.7,High School,Yes,No,No,65.3,85.1,B,Desempenho Alto
+844,Male,6.8,95.1,6.8,High School,Yes,Yes,No,47.1,80.2,B,Desempenho Baixo
+845,Male,2.7,78.2,6.3,Não informado,Yes,Yes,No,75.6,80.2,B,Desempenho Baixo
+846,Male,1.4,92.9,4.4,Bachelors,Yes,No,Yes,93.7,80.3,B,Desempenho Baixo
+847,Female,3.4,65.3,5.5,Bachelors,Yes,No,No,75.6,69.8,D,Desempenho Baixo
+848,Female,7.4,93.9,9.1,High School,No,No,No,77.3,100.0,A,Desempenho Alto
+849,Male,2.3,72.9,5.3,Masters,Yes,No,No,76.9,80.8,B,Desempenho Baixo
+850,Female,6.0,92.3,7.0,Não informado,Yes,Yes,Yes,74.8,100.0,A,Desempenho Alto
+851,Male,6.0,85.1,8.0,Bachelors,Yes,No,Yes,81.2,99.5,A,Desempenho Alto
+852,Female,2.7,75.5,5.3,High School,Yes,Yes,No,74.7,80.7,B,Desempenho Baixo
+853,Male,4.4,80.9,7.0,Bachelors,Yes,No,No,66.2,86.6,B,Desempenho Alto
+854,Male,5.9,91.9,7.9,Masters,No,Yes,No,60.4,98.8,A,Desempenho Alto
+855,Male,2.9,86.1,6.8,Bachelors,Yes,No,No,67.0,81.9,B,Desempenho Baixo
+856,Male,3.2,90.8,10.0,PhD,Yes,No,Yes,73.8,79.0,C,Desempenho Baixo
+857,Male,2.6,100.0,4.8,Bachelors,Yes,No,No,66.2,91.7,A,Desempenho Alto
+858,Male,2.0,69.4,8.1,PhD,Yes,Yes,No,73.8,78.8,C,Desempenho Baixo
+859,Female,2.5,100.0,6.6,Bachelors,Yes,Yes,No,75.3,84.8,B,Desempenho Alto
+860,Male,1.7,86.0,7.7,High School,No,No,Yes,80.0,66.5,D,Desempenho Baixo
+861,Female,3.6,76.0,7.3,High School,Yes,No,No,85.4,91.1,A,Desempenho Alto
+862,Male,2.3,71.7,5.9,High School,Yes,Yes,No,70.9,74.2,C,Desempenho Baixo
+863,Female,3.9,83.1,7.1,Não informado,Yes,No,Yes,54.3,86.3,B,Desempenho Alto
+864,Female,1.2,94.2,4.6,Masters,Yes,No,No,65.9,71.2,C,Desempenho Baixo
+865,Female,4.0,83.7,7.5,Masters,Yes,Yes,No,70.5,83.5,B,Desempenho Baixo
+866,Male,4.8,100.0,7.2,High School,Yes,No,Yes,48.0,89.8,B,Desempenho Alto
+867,Male,0.5,70.5,7.6,High School,Yes,Yes,No,86.7,80.3,B,Desempenho Baixo
+868,Female,4.1,84.9,8.1,Masters,Yes,Yes,No,71.7,91.6,A,Desempenho Alto
+869,Male,5.3,72.5,7.2,Bachelors,Yes,Yes,No,74.6,95.8,A,Desempenho Alto
+870,Female,1.7,88.6,7.0,High School,Yes,No,No,86.4,84.4,B,Desempenho Alto
+871,Male,6.0,93.9,5.7,Bachelors,Yes,No,No,62.4,96.1,A,Desempenho Alto
+872,Female,4.1,80.8,5.9,High School,Yes,Yes,Yes,76.9,92.6,A,Desempenho Alto
+873,Female,2.4,59.0,8.2,High School,Yes,No,No,68.7,75.5,C,Desempenho Baixo
+874,Male,3.4,87.0,8.5,Bachelors,Yes,No,No,67.8,85.1,B,Desempenho Alto
+875,Female,4.3,89.4,6.5,High School,Yes,No,No,60.7,93.8,A,Desempenho Alto
+876,Male,3.6,89.0,6.9,Não informado,Yes,Yes,No,90.0,81.4,B,Desempenho Baixo
+877,Female,4.3,97.4,5.7,High School,Yes,No,Yes,65.5,98.8,A,Desempenho Alto
+878,Female,2.1,74.3,8.2,High School,No,Yes,No,78.4,65.4,D,Desempenho Baixo
+879,Male,3.8,91.8,7.6,High School,Yes,Yes,No,47.5,77.6,C,Desempenho Baixo
+880,Male,1.4,96.9,9.1,Masters,Yes,Yes,Yes,84.2,85.6,B,Desempenho Alto
+881,Male,3.3,67.2,5.7,Bachelors,Yes,Yes,No,82.6,81.4,B,Desempenho Baixo
+882,Female,2.1,88.2,6.3,Bachelors,Yes,No,No,71.2,85.4,B,Desempenho Alto
+883,Male,2.4,80.0,7.1,High School,Yes,Yes,No,67.3,71.9,C,Desempenho Baixo
+884,Female,5.4,84.2,7.6,High School,Yes,No,Yes,74.8,94.4,A,Desempenho Alto
+885,Female,5.1,88.5,6.5,Bachelors,Yes,Yes,No,97.5,100.0,A,Desempenho Alto
+886,Male,4.4,80.1,5.8,Masters,Yes,Yes,Yes,48.8,77.1,C,Desempenho Baixo
+887,Male,1.9,78.2,7.9,PhD,Yes,No,Yes,79.4,76.8,C,Desempenho Baixo
+888,Female,3.0,85.3,7.7,High School,Yes,No,No,59.1,79.8,C,Desempenho Baixo
+889,Female,5.3,74.1,5.7,Bachelors,Yes,Yes,Yes,69.8,82.2,B,Desempenho Baixo
+890,Male,3.7,74.1,8.4,Não informado,Yes,Yes,Yes,67.0,77.4,C,Desempenho Baixo
+891,Male,7.0,91.8,8.2,Bachelors,Yes,Yes,Yes,64.9,100.0,A,Desempenho Alto
+892,Male,4.1,73.5,7.0,Masters,Yes,Yes,Yes,69.9,87.2,B,Desempenho Alto
+893,Male,3.8,91.7,6.9,High School,Yes,No,Yes,56.4,76.4,C,Desempenho Baixo
+894,Male,3.0,89.6,7.5,Não informado,No,No,No,82.4,79.6,C,Desempenho Baixo
+895,Female,3.7,67.7,5.8,Masters,Yes,Yes,Yes,48.5,71.4,C,Desempenho Baixo
+896,Female,3.3,78.2,6.8,Não informado,Yes,No,Yes,76.5,80.8,B,Desempenho Baixo
+897,Female,4.6,96.9,4.2,Masters,Yes,No,Yes,66.1,91.1,A,Desempenho Alto
+898,Female,4.9,75.2,7.9,Bachelors,Yes,Yes,No,55.9,78.8,C,Desempenho Baixo
+899,Male,2.3,80.4,4.9,Não informado,Yes,Yes,No,72.4,66.7,D,Desempenho Baixo
+900,Male,1.5,89.6,8.6,High School,Yes,No,No,51.3,68.8,D,Desempenho Baixo
+901,Male,0.7,92.8,6.4,High School,Yes,No,No,70.5,69.9,D,Desempenho Baixo
+902,Female,4.3,82.5,6.5,Masters,Yes,Yes,No,52.9,80.7,B,Desempenho Baixo
+903,Female,1.8,79.0,6.0,Masters,Yes,Yes,No,75.5,73.3,C,Desempenho Baixo
+904,Male,0.5,99.2,6.5,Não informado,No,Yes,Yes,58.9,68.8,D,Desempenho Baixo
+905,Male,4.1,100.0,8.5,High School,Yes,No,No,64.6,90.8,A,Desempenho Alto
+906,Female,7.2,94.8,3.8,Masters,Yes,Yes,No,73.5,100.0,A,Desempenho Alto
+907,Female,3.5,85.9,8.3,Masters,Yes,Yes,No,60.7,85.0,B,Desempenho Alto
+908,Male,4.8,76.9,7.2,High School,Yes,No,Yes,69.3,86.0,B,Desempenho Alto
+909,Male,3.6,76.7,5.4,Bachelors,Yes,No,No,51.8,73.1,C,Desempenho Baixo
+910,Female,3.4,90.2,5.5,High School,Yes,No,Yes,77.6,87.6,B,Desempenho Alto
+911,Male,4.9,89.2,8.8,High School,Yes,Yes,Yes,91.2,96.5,A,Desempenho Alto
+912,Male,3.1,99.0,5.7,Não informado,Yes,Yes,No,100.0,100.0,A,Desempenho Alto
+913,Male,3.9,91.5,5.4,Bachelors,No,Yes,No,71.1,82.1,B,Desempenho Baixo
+914,Female,4.0,70.0,8.2,Masters,Yes,Yes,No,79.5,80.3,B,Desempenho Baixo
+915,Female,2.5,95.5,7.2,Não informado,Yes,No,No,48.6,76.9,C,Desempenho Baixo
+916,Female,5.0,75.0,5.7,Bachelors,No,Yes,Yes,88.0,81.7,B,Desempenho Baixo
+917,Female,3.2,81.2,7.1,Masters,Yes,Yes,Yes,79.3,88.1,B,Desempenho Alto
+918,Female,2.4,87.5,5.6,Bachelors,Yes,Yes,Yes,64.2,88.1,B,Desempenho Alto
+919,Female,4.3,100.0,8.1,PhD,Yes,Yes,No,84.8,97.3,A,Desempenho Alto
+920,Female,2.2,100.0,8.1,High School,Yes,No,Yes,66.9,83.4,B,Desempenho Baixo
+921,Male,3.5,91.1,7.4,Não informado,Yes,Yes,Yes,64.5,72.8,C,Desempenho Baixo
+922,Male,3.5,83.2,7.2,High School,Yes,Yes,No,75.7,90.5,A,Desempenho Alto
+923,Male,5.1,90.3,8.9,High School,Yes,Yes,Yes,57.2,83.8,B,Desempenho Alto
+924,Male,4.2,93.9,6.8,Masters,Yes,Yes,No,82.3,93.1,A,Desempenho Alto
+925,Male,3.5,81.8,5.4,Bachelors,Yes,Yes,No,57.3,71.2,C,Desempenho Baixo
+926,Male,4.7,100.0,7.3,Bachelors,Yes,No,No,57.4,95.3,A,Desempenho Alto
+927,Male,5.6,87.3,9.3,Bachelors,Yes,No,No,59.1,99.6,A,Desempenho Alto
+928,Female,4.3,90.0,5.6,Masters,Yes,No,No,79.1,92.4,A,Desempenho Alto
+929,Female,3.5,91.7,6.4,High School,Yes,No,Yes,62.6,75.4,C,Desempenho Baixo
+930,Male,1.5,89.2,7.3,High School,Yes,No,No,53.8,80.8,B,Desempenho Baixo
+931,Male,1.9,93.4,6.7,High School,Yes,No,No,62.7,72.9,C,Desempenho Baixo
+932,Female,3.0,78.8,5.6,Bachelors,Yes,Yes,Yes,69.6,63.7,D,Desempenho Baixo
+933,Male,2.6,79.4,8.1,High School,Yes,Yes,Yes,55.8,75.3,C,Desempenho Baixo
+934,Male,3.2,74.0,9.6,Bachelors,Yes,Yes,No,56.2,71.7,C,Desempenho Baixo
+935,Female,3.6,89.4,7.0,Bachelors,Yes,No,No,95.3,100.0,A,Desempenho Alto
+936,Male,4.3,92.8,5.7,High School,Yes,No,No,59.7,83.3,B,Desempenho Baixo
+937,Female,3.4,89.6,4.9,Bachelors,Yes,No,No,66.1,85.6,B,Desempenho Alto
+938,Male,4.2,100.0,7.1,PhD,No,Yes,Yes,65.6,93.1,A,Desempenho Alto
+939,Female,3.6,84.9,8.1,High School,Yes,No,No,64.9,77.3,C,Desempenho Baixo
+940,Female,0.5,91.7,7.4,Bachelors,Yes,Yes,No,77.5,74.8,C,Desempenho Baixo
+941,Female,2.1,74.1,6.8,Masters,Yes,Yes,Yes,81.4,76.7,C,Desempenho Baixo
+942,Male,3.3,81.1,6.1,Bachelors,No,Yes,No,66.3,85.3,B,Desempenho Alto
+943,Female,1.7,92.0,5.5,Masters,Yes,Yes,No,55.2,68.6,D,Desempenho Baixo
+944,Male,4.4,93.5,7.8,Bachelors,Yes,Yes,No,85.3,96.4,A,Desempenho Alto
+945,Male,5.8,82.1,7.9,Bachelors,Yes,Yes,Yes,68.9,95.7,A,Desempenho Alto
+946,Male,5.3,84.3,4.9,High School,Yes,Yes,No,90.8,96.1,A,Desempenho Alto
+947,Male,3.2,69.8,8.7,Masters,Yes,No,No,43.1,70.4,C,Desempenho Baixo
+948,Female,5.7,81.4,7.5,Masters,Yes,No,No,72.3,85.8,B,Desempenho Alto
+949,Female,3.7,93.9,8.5,High School,No,No,No,93.0,100.0,A,Desempenho Alto
+950,Male,3.0,90.8,5.2,Bachelors,No,Yes,Yes,65.8,65.8,D,Desempenho Baixo
+951,Male,2.6,90.0,5.2,Não informado,No,No,No,67.3,72.4,C,Desempenho Baixo
+952,Female,3.0,85.5,6.6,Bachelors,Yes,No,No,73.5,83.6,B,Desempenho Baixo
+953,Male,2.9,85.1,7.4,Bachelors,Yes,Yes,Yes,63.3,89.5,B,Desempenho Alto
+954,Female,3.8,78.4,9.0,Não informado,Yes,Yes,No,66.3,77.9,C,Desempenho Baixo
+955,Male,3.7,92.0,7.6,Masters,Yes,Yes,No,65.9,100.0,A,Desempenho Alto
+956,Male,3.5,89.2,6.5,Bachelors,Yes,Yes,No,62.5,88.3,B,Desempenho Alto
+957,Female,4.2,89.9,5.6,Masters,Yes,No,Yes,84.7,93.5,A,Desempenho Alto
+958,Male,5.3,79.7,8.3,PhD,Yes,No,No,75.5,89.0,B,Desempenho Alto
+959,Female,4.9,63.5,5.6,Bachelors,Yes,Yes,No,73.0,87.6,B,Desempenho Alto
+960,Male,1.3,96.0,8.8,Bachelors,Yes,No,No,79.7,80.5,B,Desempenho Baixo
+961,Male,0.5,80.2,6.5,Bachelors,Yes,No,No,66.8,75.4,C,Desempenho Baixo
+962,Male,4.9,76.4,8.7,Não informado,Yes,No,No,60.7,80.7,B,Desempenho Baixo
+963,Female,1.4,91.9,7.6,Masters,Yes,Yes,Yes,62.8,73.0,C,Desempenho Baixo
+964,Male,3.2,81.1,6.6,High School,Yes,No,No,70.0,78.4,C,Desempenho Baixo
+965,Male,1.7,95.6,6.2,PhD,Yes,Yes,No,57.3,69.5,D,Desempenho Baixo
+966,Male,0.8,91.2,6.4,Bachelors,Yes,No,No,64.0,76.2,C,Desempenho Baixo
+967,Male,4.3,91.8,7.3,High School,Yes,Yes,Yes,63.8,90.0,A,Desempenho Alto
+968,Female,4.6,71.3,6.9,Bachelors,Yes,Yes,No,95.5,100.0,A,Desempenho Alto
+969,Female,2.6,97.1,6.1,Bachelors,Yes,No,No,36.7,60.0,D,Desempenho Baixo
+970,Male,0.5,87.6,6.6,PhD,Yes,Yes,No,67.8,78.3,C,Desempenho Baixo
+971,Female,2.7,81.3,6.9,High School,Yes,Yes,Yes,90.7,100.0,A,Desempenho Alto
+972,Male,4.1,86.4,4.2,Masters,No,Yes,Yes,71.5,75.6,C,Desempenho Baixo
+973,Male,1.3,67.2,7.3,Bachelors,Yes,No,No,79.0,84.1,B,Desempenho Alto
+974,Male,3.8,89.1,5.6,High School,No,Yes,Yes,71.2,77.9,C,Desempenho Baixo
+975,Female,3.5,74.7,5.4,Não informado,Yes,No,No,62.0,67.9,D,Desempenho Baixo
+976,Female,4.4,71.5,4.8,Bachelors,Yes,Yes,Yes,43.1,67.0,D,Desempenho Baixo
+977,Female,3.7,69.8,4.6,High School,No,Yes,No,72.5,80.9,B,Desempenho Baixo
+978,Female,2.0,96.1,5.2,Bachelors,Yes,Yes,No,60.7,72.1,C,Desempenho Baixo
+979,Female,5.3,78.7,5.9,PhD,Yes,Yes,No,60.4,83.0,B,Desempenho Baixo
+980,Female,3.3,100.0,9.1,High School,Yes,Yes,No,64.0,93.9,A,Desempenho Alto
+981,Female,3.5,79.6,6.2,High School,Yes,Yes,No,90.9,91.4,A,Desempenho Alto
+982,Female,2.1,67.9,7.0,High School,No,No,Yes,98.9,79.7,C,Desempenho Baixo
+983,Female,2.8,73.8,7.3,High School,Yes,No,Yes,72.6,77.7,C,Desempenho Baixo
+984,Male,2.2,97.4,7.0,Masters,Yes,Yes,No,64.4,85.0,B,Desempenho Alto
+985,Female,3.2,83.4,6.7,Bachelors,Yes,Yes,No,55.9,75.4,C,Desempenho Baixo
+986,Female,6.1,79.5,5.4,High School,Yes,No,No,75.6,96.4,A,Desempenho Alto
+987,Female,1.4,86.6,8.5,High School,Yes,Yes,No,91.4,81.8,B,Desempenho Baixo
+988,Female,1.1,90.0,9.0,High School,Yes,Yes,No,67.0,85.8,B,Desempenho Alto
+989,Female,5.7,96.2,4.8,Não informado,Yes,No,No,41.5,80.9,B,Desempenho Baixo
+990,Female,3.2,99.5,5.6,High School,Yes,No,Yes,78.0,93.9,A,Desempenho Alto
+991,Female,2.5,81.4,6.5,Não informado,Yes,No,No,81.8,81.9,B,Desempenho Baixo
+992,Female,5.1,71.7,5.6,Bachelors,Yes,Yes,No,51.0,80.4,B,Desempenho Baixo
+993,Female,2.6,80.9,7.4,High School,Yes,Yes,No,72.1,78.8,C,Desempenho Baixo
+994,Female,6.2,87.6,5.9,PhD,Yes,No,No,75.4,92.7,A,Desempenho Alto
+995,Female,4.5,75.4,9.4,Bachelors,Yes,Yes,No,69.1,79.1,C,Desempenho Baixo
+996,Male,2.8,75.4,8.2,Masters,Yes,Yes,No,60.5,70.7,C,Desempenho Baixo
+997,Male,6.7,88.4,7.1,Não informado,No,Yes,No,82.2,99.5,A,Desempenho Alto
+998,Female,2.6,84.5,8.0,High School,Yes,Yes,Yes,65.2,79.2,C,Desempenho Baixo
+999,Female,4.6,85.3,8.1,High School,No,No,Yes,52.2,82.2,B,Desempenho Baixo
+1000,Male,3.9,77.4,6.1,Masters,Yes,No,No,45.4,70.4,C,Desempenho Baixo
