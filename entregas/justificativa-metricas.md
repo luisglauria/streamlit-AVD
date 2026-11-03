@@ -8,14 +8,14 @@
 - **O que mede:** A média das notas obtidas pelos alunos na avaliação final.
 - **Por que foi escolhida:** Permite visualizar rapidamente o desempenho acadêmico geral da turma.
 - **Público-alvo:** Coordenação pedagógica e professores.
-- **Qual decisão pode ser apoiada por essa métrica?** Identificar se a turma precisa de reforço, revisão de conteúdos ou acompanhamento adicional. «Inclua aqui a referência que você usaria para dizer que a média está baixa, por exemplo uma meta da escola.»
+- **Qual decisão pode ser apoiada por essa métrica?** Identificar se a turma precisa de reforço, revisão de conteúdos ou acompanhamento adicional. Como referência, a média pode ser considerada baixa quando estiver abaixo da mediana da turma.
 - **O que comunica ao público-alvo:** O nível geral da turma na avaliação final, em uma escala de 0 a 100.
 
 ## Métrica 2: Média de horas de estudo
 
 - **Variável:** `study_time_hours`
 - **O que mede:** A quantidade média de horas por dia que os alunos dedicam aos estudos.
-- **Por que foi escolhida:** Na EDA, a variável apresentou correlação positiva com a nota final («confirme o valor: Spearman = 0,56, moderada»), e representa um hábito que pode ser acompanhado pela escola. Isso indica associação, não causa.
+- **Por que foi escolhida:** Na EDA, a correlação de Spearman entre horas de estudo e nota final foi de aproximadamente 0,56, indicando uma associação positiva moderada. Essa relação indica associação, não causalidade. A variável também representa um hábito que pode ser acompanhado pela escola.
 - **Público-alvo:** Professores, coordenação pedagógica e alunos.
 - **Qual decisão pode ser apoiada por essa métrica?** Avaliar a necessidade de orientar os alunos sobre organização da rotina e hábitos de estudo.
 - **O que comunica ao público-alvo:** Quantas horas por dia, em média, os alunos dedicam aos estudos.
@@ -24,7 +24,7 @@
 
 - **Variável:** Diferença entre `final_exam_score` e `previous_grade`.
 - **O que mede:** A variação média dos alunos entre a nota anterior e a nota final.
-- **Por que foi escolhida:** Mostra se o desempenho dos alunos melhorou ou piorou entre as duas notas. «Confirme antes de manter esta frase: as duas variáveis estão na mesma escala, de 0 a 100.»
+- **Por que foi escolhida:** Mostra se o desempenho dos alunos melhorou ou piorou entre as duas notas. As duas variáveis estão na mesma escala, de 0 a 100.
 - **Público-alvo:** Coordenação pedagógica e professores.
 - **Qual decisão pode ser apoiada por essa métrica?** Identificar se há melhora ou queda média no desempenho e onde vale investigar com mais atenção. A métrica não mostra o motivo da variação.
 - **O que comunica ao público-alvo:** Um valor positivo indica melhora média; um valor negativo indica redução média no desempenho.
