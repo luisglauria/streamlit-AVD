@@ -139,4 +139,47 @@ with tab2:
         tooltip=["faixa_freq", alt.Tooltip("proporcao:Q", format=".1%"), "n"],
     )
     textos = barras.mark_text(dy=-8, color=COR_DESTAQUE).encode(text="rotulo:N")
-    st.altair_chart(\n        barras + textos,\n        width="stretch",\n        alt="Proporção de Desempenho Alto por faixa de frequência.",\n    )\n    st.caption(\n        "Faixas operacionais: Baixa até 75%, Média de 75% a 90%, Alta acima de 90%. "\n        "O gráfico mostra uma associação descritiva, não uma relação de causa."\n    )\n\n    col_notas, col_estudo = st.columns(2)\n\n    with col_notas:\n        st.subheader("Distribuição das notas finais")\n        notas = (\n            alt.Chart(df)\n            .mark_bar(color=COR_DESTAQUE)\n            .encode(\n                x=alt.X("final_exam_score:Q", bin=alt.Bin(maxbins=12), title="Nota final"),\n                y=alt.Y("count():Q", title="Quantidade de alunos"),\n                tooltip=[alt.Tooltip("count():Q", title="Alunos")],\n            )\n        )\n        st.altair_chart(notas, width="stretch", alt="Distribuição das notas finais dos alunos.")\n\n    with col_estudo:\n        st.subheader("Horas de estudo e nota final")\n        pontos = (\n            alt.Chart(df)\n            .mark_circle(size=65, opacity=0.55)\n            .encode(\n                x=alt.X("study_time_hours:Q", title="Horas de estudo por dia"),\n                y=alt.Y("final_exam_score:Q", title="Nota final"),\n                color=alt.Color("situacao:N", title="Situação"),\n                tooltip=["study_time_hours:Q", "final_exam_score:Q", "situacao:N"],\n            )\n        )\n        tendencia = (\n            alt.Chart(df)\n            .transform_regression("study_time_hours", "final_exam_score")\n            .mark_line(color="#b85c5c", size=2)\n            .encode(x=alt.X("study_time_hours:Q"), y=alt.Y("final_exam_score:Q"))\n        )\n        st.altair_chart(pontos + tendencia, width="stretch", alt="Relação entre horas de estudo por dia e nota final.")
+    st.altair_chart(
+        barras + textos,
+        width="stretch",
+        alt="Proporção de Desempenho Alto por faixa de frequência.",
+    )
+    st.caption(
+        "Faixas operacionais: Baixa até 75%, Média de 75% a 90%, Alta acima de 90%. "
+        "O gráfico mostra uma associação descritiva, não uma relação de causa."
+    )
+
+    col_notas, col_estudo = st.columns(2)
+
+    with col_notas:
+        st.subheader("Distribuição das notas finais")
+        notas = (
+            alt.Chart(df)
+            .mark_bar(color=COR_DESTAQUE)
+            .encode(
+                x=alt.X("final_exam_score:Q", bin=alt.Bin(maxbins=12), title="Nota final"),
+                y=alt.Y("count():Q", title="Quantidade de alunos"),
+                tooltip=[alt.Tooltip("count():Q", title="Alunos")],
+            )
+        )
+        st.altair_chart(notas, width="stretch", alt="Distribuição das notas finais dos alunos.")
+
+    with col_estudo:
+        st.subheader("Horas de estudo e nota final")
+        pontos = (
+            alt.Chart(df)
+            .mark_circle(size=65, opacity=0.55)
+            .encode(
+                x=alt.X("study_time_hours:Q", title="Horas de estudo por dia"),
+                y=alt.Y("final_exam_score:Q", title="Nota final"),
+                color=alt.Color("situacao:N", title="Situação"),
+                tooltip=["study_time_hours:Q", "final_exam_score:Q", "situacao:N"],
+            )
+        )
+        tendencia = (
+            alt.Chart(df)
+            .transform_regression("study_time_hours", "final_exam_score")
+            .mark_line(color="#b85c5c", size=2)
+            .encode(x=alt.X("study_time_hours:Q"), y=alt.Y("final_exam_score:Q"))
+        )
+        st.altair_chart(pontos + tendencia, width="stretch", alt="Relação entre horas de estudo por dia e nota final.")
